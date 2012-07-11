@@ -1,5 +1,5 @@
-(setq load-path (cons "~/.emacs.d/org-mode/lisp" load-path))
-(setq load-path (cons "~/.emacs.d/org-mode/contrib/lisp" load-path))
+(setq load-path (cons "~/.emacs.d/packages/org-mode/lisp" load-path))
+(setq load-path (cons "~/.emacs.d/packages/org-mode/contrib/lisp" load-path))
 
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
 (add-hook 'org-mode-hook 'turn-on-font-lock) ; not needed when global-font-lock-mode is on
