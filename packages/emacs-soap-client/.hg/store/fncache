@@ -1,0 +1,7 @@
+data/.dir-locals.el.i
+data/.hgignore.i
+data/jira2.el.i
+data/COPYING.i
+data/ChangeLog.i
+data/soap-client.el.i
+data/soap-inspect.el.i
