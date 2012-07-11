@@ -20,14 +20,11 @@
 (require 'semanticdb)
 (global-semanticdb-minor-mode 1)
 
-;; если вы хотите включить поддержку gnu global
 (when (cedet-gnu-global-version-check t)
   (require 'semanticdb-global)
   (semanticdb-enable-gnu-global-databases 'c-mode)
   (semanticdb-enable-gnu-global-databases 'c++-mode))
 
-;; включить поддержку ctags для основных языков:
-;;  Unix Shell, Perl, Pascal, Tcl, Fortran, Asm
 ;;(when (cedet-ectag-version-check)
 ;;  (semantic-load-enable-primary-exuberent-ctags-support))
 
@@ -54,27 +51,5 @@
 
 
 (add-hook 'c-mode-common-hook 'my-c-mode-cedet-hook)
-
-;; Reflect FS
-(ede-cpp-root-project "ReflectFS"
-                :name "ReflectFS"
-                :file "~/Development/c/reflectfs/CMakeLists.txt"
-                :include-path '("/"
-                                "/libs"
-                                "/src"
-                               )
-                ;;:system-include-path '(".")
-                :spp-table '(("isUnix" . "")
-                             ("BOOST_TEST_DYN_LINK" . "")))
-
-;; Reflect FS
-(ede-cpp-root-project "Private Budget"
-                :name "Private Budget"
-                :file "~/Development/qt4/PrivateBudget/main.cpp"
-                :include-path '("/"
-                               )
-                :system-include-path '("/usr/include/qt4")
-                :spp-table '(("isUnix" . "")
-                             ("BOOST_TEST_DYN_LINK" . "")))
 
 (provide 'init-cedet)
