@@ -280,4 +280,14 @@ If point was already at that position, move point to beginning of line."
     )
   (redraw-display))
 
+(defconst sudo-prefix "/sudo:root@localhost:")
+
+(defun sudo-find-file ()
+  (interactive)
+  (find-file (concat sudo-prefix (ido-read-file-name "Find file: "))))
+
+(defun sudo-current-buffer ()
+  (interactive)
+  (find-alternate-file (concat sudo-prefix buffer-file-name)))
+
 (provide 'init-general-defuns)
