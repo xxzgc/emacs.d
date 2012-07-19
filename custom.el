@@ -50,9 +50,10 @@
   (setq font-lock-auto-fontify t))   ; XEmacs
 
 
-;; toolbar/menubar mode disable
-(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
-(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
+;; toolbar/menubar/scrollbar mode disable
+(if (fboundp 'menu-bar-mode) (menu-bar-mode nil))
+(if (fboundp 'tool-bar-mode) (tool-bar-mode nil))
+(if (fboundp 'scroll-bar-mode) (scroll-bar-mode nil))
 
 ;; In every buffer, the line which contains the cliursor will be fully
 ;; highlighted
