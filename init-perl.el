@@ -8,7 +8,9 @@
 ;;           (lambda()
 ;;             (unless (boundp 'init-perl-module) (init-perl))))
 
-;; a few useful functions for perl developer
+
+;; emacs-functions-for-perl
+(setq load-path (cons "~/.emacs.d/packages/emacs-functions-for-perl" load-path))
 (require 'functions-for-perl)
 
 ;; xs-mode
