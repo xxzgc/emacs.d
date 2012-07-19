@@ -9,7 +9,7 @@
 (require 'jira2)
 
 ;; jira params
-(load-file "~/.emacs.d/private/auth-jira.el")
+(load-file "~/.emacs-private/auth-jira.el")
 ;; }}
 
 (provide 'init-jira)

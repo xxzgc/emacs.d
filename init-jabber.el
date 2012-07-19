@@ -2,7 +2,7 @@
 (require 'jabber)
 
 ;; jabber params
-(load-file "~/.emacs.d/private/auth-jabber.el")
+(load-file "~/.emacs-private/auth-jabber.el")
 
 (custom-set-variables
  '(jabber-alert-presence-hooks nil)

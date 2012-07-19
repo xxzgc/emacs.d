@@ -42,7 +42,7 @@
 ;;    (("irc.freenode.net" "irc.perl.org") "#perl"))
 
 ;; auth info
-(load-file "~/.emacs.d/private/auth-irc.el")
+(load-file "~/.emacs-private/auth-irc.el")
 
 ;; }}
 (provide 'init-irc)
