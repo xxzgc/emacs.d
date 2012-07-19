@@ -91,6 +91,8 @@
 
 (require 'init-clojure)
 
+(require 'init-shell-script)
+
 (require 'init-profile)
 
 ;;----------------------------------------------------------------------------
