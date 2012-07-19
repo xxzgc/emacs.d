@@ -4,13 +4,9 @@
 
 (defalias 'perl-mode 'cperl-mode)
 
-(set-mode-for-filename-patterns 
-  'cperl-mode
-  '("\\.pl$" "\\.pm$" "\\.p6$" "\\.PL$" "\\.t$"))
-
-(add-hook 'cperl-mode-hook 
-          (lambda()
-            (unless (boundp 'init-perl-module) (init-perl))))
+;; (add-hook 'cperl-mode-hook 
+;;           (lambda()
+;;             (unless (boundp 'init-perl-module) (init-perl))))
 
 ;; a few useful functions for perl developer
 (require 'functions-for-perl)
@@ -21,7 +17,7 @@
 (add-to-list 'auto-mode-alist '("\\.xs$" . xs-mode))
 
 ;; SEPIA -  Simple Emacs-Perl Interface
-(setq load-path (cons "~/.emacs.d/sepia" load-path))
+(setq load-path (cons "~/.emacs.d/packages/sepia" load-path))
 
 ;;
 ;; cpanm Devel::PerlySense
@@ -34,8 +30,19 @@
 (require 'perlbrew-mini)
 
 (perlbrew-mini-set-perls-dir "/opt/perl5/perls/")
-    
-(perlbrew-mini-use "perl-5.16.0-threaded")
+
+;; (defvar perlbrew-current "perl-5.16.0-threaded")
+(defvar perlbrew-init-file "~/.perlbrew/init")
+
+(defun perlbrew-detect ()
+  (let ((file-content (file-string perlbrew-init-file)))
+    (if (file-exists-p perlbrew-init-file)
+        (when (string-match "export\\s-PERLBREW\_PERL\=\"\\(.+\\)\"" 
+                            file-content)
+           (match-string-no-properties 1 file-content)))))
+
+
+(perlbrew-mini-use (perlbrew-detect))
 
 ;; ffap-perl-module
 (eval-after-load "ffap" '(require 'ffap-perl-module))
@@ -119,7 +126,6 @@
   (setq cperl-electric-keywords nil)
   ;; (init-pde)
   ;; (init-perlysence)
-  (linum-mode)
 )
 
 (defun init-pde ()
@@ -197,5 +203,9 @@
   (setq ps/use-prepare-shell-command t))
 
 ;; }}
+
+(set-mode-for-filename-patterns 
+  'cperl-mode
+  '("\\.pl$" "\\.pm$" "\\.p6$" "\\.PL$" "\\.t$"))
 
 (provide 'init-perl)
