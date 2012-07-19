@@ -1,5 +1,3 @@
-;; -*- coding: utf-8 -*-
-
 (defconst emacs-start-time (current-time))
 
 ;; exec path
@@ -93,6 +91,8 @@
 
 (require 'init-clojure)
 
+(require 'init-profile)
+
 ;;----------------------------------------------------------------------------
 ;; Allow access from emacsclient
 ;;----------------------------------------------------------------------------
@@ -100,3 +100,12 @@
 (unless (server-running-p)
   (server-start))
 
+
+;; # Local Variables:
+;; # tab-width: 2
+;; # cperl-indent-level: 2
+;; # End:
+
+;; -*- coding: utf-8 -*-
+
+;;; ~/.emacs.d/init.el ends here
