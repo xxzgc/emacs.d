@@ -290,4 +290,23 @@ If point was already at that position, move point to beginning of line."
   (interactive)
   (find-alternate-file (concat sudo-prefix buffer-file-name)))
 
+(defun ido-for-mode (prompt the-mode)
+  (switch-to-buffer
+   (ido-completing-read prompt
+                        (save-excursion
+                          (delq
+                           nil
+                           (mapcar (lambda (buf)
+                                     (when (buffer-live-p buf)
+                                       (with-current-buffer buf
+                                         (and (eq major-mode the-mode)
+                                              (buffer-name buf)))))
+                                   (buffer-list)))))))
+
+(defun file-string (file)
+  "Read the contents of a file and return as a string."
+  (with-temp-buffer
+    (insert-file-contents file)
+    (buffer-string)))
+
 (provide 'init-general-defuns)
