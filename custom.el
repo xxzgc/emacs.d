@@ -51,9 +51,9 @@
 
 
 ;; toolbar/menubar/scrollbar mode disable
-(if (fboundp 'menu-bar-mode) (menu-bar-mode nil))
-(if (fboundp 'tool-bar-mode) (tool-bar-mode nil))
-(if (fboundp 'scroll-bar-mode) (scroll-bar-mode nil))
+(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
+(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
+(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 
 ;; In every buffer, the line which contains the cliursor will be fully
 ;; highlighted
