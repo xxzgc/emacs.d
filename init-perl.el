@@ -16,7 +16,10 @@
 ;; xs-mode
 (require 'xs-mode)
 (autoload 'xs-mode "xs-mode" "Major mode for XS files" t)
-(add-to-list 'auto-mode-alist '("\\.xs$" . xs-mode))
+
+;; Template Toolkit mode
+(setq load-path (cons "~/.emacs.d/packages/tt-mode" load-path))
+(require 'tt-mode)
 
 ;; SEPIA -  Simple Emacs-Perl Interface
 (setq load-path (cons "~/.emacs.d/packages/sepia" load-path))
@@ -206,8 +209,19 @@
 
 ;; }}
 
+;; Perl scripts/modules
 (set-mode-for-filename-patterns 
   'cperl-mode
   '("\\.pl$" "\\.pm$" "\\.p6$" "\\.PL$" "\\.t$"))
+
+;; Template Toolkit
+(set-mode-for-filename-patterns 
+  'tt-mode
+  '("\\.tt$"))
+
+;; XS
+(set-mode-for-filename-patterns 
+  'xs-mode
+  '("\\.xs$"))
 
 (provide 'init-perl)
