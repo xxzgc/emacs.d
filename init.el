@@ -77,7 +77,7 @@
 
 (require 'init-yaml)
 
-;; (require 'init-python)
+(require 'init-python)
 
 (require 'init-elisp)
 

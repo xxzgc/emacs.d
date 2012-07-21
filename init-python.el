@@ -1,9 +1,9 @@
-;;; init_python.el --- init python
+;;; init-python.el --- init python
 
 ;; Copyright (C) 2012 Free Software Foundation, Inc.
 ;;
-;; Author: taryk <taryk@darkspace.com>
-;; Maintainer: taryk <taryk@darkspace.com>
+;; Author: taryk <mrtaryk@gmail.com>
+;; Maintainer: taryk <mrtaryk@gmail.com>
 ;; Created: 09 Jan 2012
 ;; Version: 0.01
 ;; Keywords
@@ -27,7 +27,7 @@
 ;; 
 
 ;; Put this file into your load-path and the following into your ~/.emacs:
-;;   (require 'init_python)
+;;   (require 'init-python)
 
 ;;; Code:
 
@@ -40,14 +40,11 @@
 (require 'python-mode)
 
 (autoload 'python-mode "python-mode" "Python Mode." t)
-(add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
+
 (add-to-list 'interpreter-mode-alist '("python" . python-mode))
 
-(require 'ipython)
-
-(require 'python-mode)
 (add-hook 'python-mode-hook (lambda ()
-  (linum-mode t)
+  (linum-mode)
   (set-variable 'python-indent-offset 4)
  ;(set-variable 'python-smart-indentation nil)
 
@@ -175,5 +172,10 @@
 
 (add-hook 'find-file-hook 'flymake-find-file-hook)
 
+(set-mode-for-filename-patterns 
+  'python-mode
+  '("\\.py$"))
+
 (provide 'init-python)
+
 ;;; init_python.el ends here
