@@ -93,6 +93,8 @@
 
 (require 'init-clojure)
 
+(require 'init-haskell)
+
 (require 'init-shell-script)
 
 (require 'init-profile)
