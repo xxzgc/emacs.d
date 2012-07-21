@@ -15,6 +15,8 @@
 
 (load-file "~/.emacs.d/custom.el")
 
+(require 'init-cc)
+
 (require 'init-general-defuns)
 
 (require 'init-elpa)

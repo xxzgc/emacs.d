@@ -1,0 +1,11 @@
+syntax: glob
+*~
+\#*\#
+*.elc
+cc-mode.info
+cc-mode.html
+cc-mode.dvi
+cc-mode.ps
+cc-mode.rev.ps
+*.diff
+TAGS
