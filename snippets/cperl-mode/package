@@ -1,5 +1,6 @@
 # -*- mode: snippet -*-
 # name: package ...
+# key: package
 # --
 package ${1:`(let ((package-file (buffer-file-name)))
                (if (string-match "libs?\\\/\\\([a-zA-Z_0-9\\\/]+\\\)\\\.pm$" package-file)
@@ -8,6 +9,8 @@ package ${1:`(let ((package-file (buffer-file-name)))
 
 use strict;
 use warnings;
+
+our $VERSION = '${2:0.01}';
 
 sub new {
   my \$class = shift;
