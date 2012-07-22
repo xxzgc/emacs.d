@@ -1,7 +1,10 @@
 # -*- mode: snippet -*-
 # name: package ...
 # --
-package ${1:`(or (package-name) "package_name")`};
+package ${1:`(let ((package-file (buffer-file-name)))
+               (if (string-match "libs?\\\/\\\([a-zA-Z_0-9\\\/]+\\\)\\\.pm$" package-file)
+                 (replace-regexp-in-string "/" "::" (match-string 1 package-file))
+                  "package_name"))`};
 
 use strict;
 use warnings;
@@ -11,5 +14,7 @@ sub new {
   my \$self  = bless { @_ } => \$class;
   \$self
 }
+
+$0
 
 1;
