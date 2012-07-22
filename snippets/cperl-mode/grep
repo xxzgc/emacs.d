@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: grep { ... } ...
+# key: grep
+# --
+grep { ${2:body} } ${1:list_context}

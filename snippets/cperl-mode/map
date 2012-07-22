@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: map { ... } ...
+# key: map
+# --
+map { ${2:body} } ${1:list_context}
