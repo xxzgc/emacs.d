@@ -87,8 +87,6 @@
 
 (require 'init-modeline)
 
-(require 'init-keybinds)
-
 (require 'init-heroku)
 
 (require 'init-clojure)
@@ -98,6 +96,8 @@
 (require 'init-shell-script)
 
 (require 'init-profile)
+
+(require 'init-keybinds)
 
 ;;----------------------------------------------------------------------------
 ;; Allow access from emacsclient
