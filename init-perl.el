@@ -209,6 +209,12 @@
 
 ;; }}
 
+(defun package-name ()
+  (if (string-match "libs?\\/\\([a-zA-Z_0-9\\/]+\\)\\.p\\(m\\|l\\)$"
+                    (buffer-file-name))
+      (replace-regexp-in-string "/" "::" 
+        (match-string-no-properties 1 (buffer-file-name)))))
+
 ;; Perl scripts/modules
 (set-mode-for-filename-patterns 
   'cperl-mode

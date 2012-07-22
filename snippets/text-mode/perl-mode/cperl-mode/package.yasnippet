@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: package ...
+# --
+package ${1:`(or (yta/package-name) "package_name")`};
+
+use strict;
+use warnings;
+
+sub new {
+  my \$class = shift;
+  my \$self  = bless { @_ } => \$class;
+  \$self
+}
+
+1;
