@@ -5,13 +5,17 @@
 
 ;; (yas/initialize)
 
-;; (setq yas/snippet-dirs "~/.emacs.d/snippets") 
-(yas/load-directory "~/.emacs.d/snippets")
+;; (yas/load-directory "~/.emacs.d/snippets")
+(setq yas/snippet-dirs 
+      '("~/.emacs.d/snippets"
+        "~/.emacs.d/packages/yasnippet/snippets"
+       ))
 
 (yas/global-mode 1)
 
 (require 'dropdown-list)
-(setq yas/prompt-functions '(yas/dropdown-prompt
+(setq yas/prompt-functions '(yas/x-prompt
+                             yas/dropdown-prompt
                              yas/ido-prompt
                              yas/completing-prompt))
 
