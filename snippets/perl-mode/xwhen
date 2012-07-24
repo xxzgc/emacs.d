@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ... when ...
+# key: xwhen
+# --
+${2:expression} when ${1:smart_match};

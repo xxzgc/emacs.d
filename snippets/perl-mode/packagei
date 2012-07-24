@@ -1,0 +1,27 @@
+# -*- mode: snippet -*-
+# name: package ...; use base ...;
+# key: packagei
+# --
+package ${1:`(let ((package-file (buffer-file-name)))
+               (if (string-match "libs?\\\/\\\([a-zA-Z_0-9\\\/]+\\\)\\\.pm$" package-file)
+                 (replace-regexp-in-string "/" "::" (match-string 1 package-file))
+                  "package_name"))`};
+
+use base qw[ ${1:$(if (string-match "\\\\(.+\\\\)::[^:]+$" yas/text)
+                      (match-string 1 yas/text)
+                      "inherited_package_name")} ];
+
+use strict;
+use warnings;
+
+our $VERSION = '${2:0.01}';
+
+sub new {
+  my \$class = shift;
+  my \$self  = \$class->SUPER::new( @_ );
+  \$self
+}
+
+$0
+
+1;

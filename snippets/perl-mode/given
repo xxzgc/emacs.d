@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: given ( ... ) { ... }
+# key: given
+# --
+given (${1:scalar_context}) {
+  when (${2:smart_match}) { $3 }
+  default { $4 }
+}

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ... until ...
+# key: xuntil
+# --
+${1:expression} until ${2:condition};
