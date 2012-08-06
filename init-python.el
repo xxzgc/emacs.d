@@ -1,4 +1,4 @@
-;;; init-python.el --- init python
+;; init-python.el --- init python
 
 ;; Copyright (C) 2012 Free Software Foundation, Inc.
 ;;
@@ -34,7 +34,7 @@
 (eval-when-compile
   (require 'cl))
 
-(add-to-list 'load-path "~/.emacs.d/packages/python-mode.el-6.0.4/") 
+(add-to-list 'load-path "~/.emacs.d/packages/python-mode.el-6.0.4/")
 (setq py-install-directory "~/.emacs.d/packages/python-mode.el-6.0.4/")
 (require 'python)
 (require 'python-mode)
@@ -66,16 +66,25 @@
                                   (define-key python-mode-map (kbd "M-<tab>") 'anything-ipython-complete)))
 
 ;; pymacs
-
+(require 'pymacs)
 (autoload 'pymacs-apply "pymacs")
 (autoload 'pymacs-call "pymacs")
 (autoload 'pymacs-eval "pymacs" nil t)
 (autoload 'pymacs-exec "pymacs" nil t)
 (autoload 'pymacs-load "pymacs" nil t)
+
 ;;(eval-after-load "pymacs"
 ;; '(add-to-list 'pymacs-load-path YOUR-PYMACS-DIRECTORY"))
+
+;;(setq pymacs-load-path '("/path/to/rope"
+;;                         "/path/to/ropemacs"))
+
 (pymacs-load "ropemacs" "rope-")
 (setq ropemacs-enable-autoimport t)
+(setq ropemacs-confirm-saving 'nil)
+
+(setq ropemacs-enable-shortcuts nil)
+(setq ropemacs-local-prefix "C-c C-p")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Auto-completion
