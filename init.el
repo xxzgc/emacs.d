@@ -95,6 +95,8 @@
 
 (require 'init-shell-script)
 
+;; (require 'init-nxhtml)
+
 (require 'init-profile)
 
 (require 'init-keybinds)
