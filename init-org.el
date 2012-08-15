@@ -12,6 +12,10 @@
 
 ;; log into :LOGBOOK: drawer
 (setq org-clock-into-drawer t)
+
+;; idle time
+(setq org-clock-idle-time 10)
+
 (setq org-todo-keywords
 '((sequence "TODO" "PROGRESS" "WAIT" "TESTING" "REPORT" "|" "DONE")
   (sequence "BUG" "FEATURE" "|" "FIXED")
