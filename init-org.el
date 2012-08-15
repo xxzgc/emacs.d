@@ -7,6 +7,8 @@
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
 
+(setq org-clock-persist 'history)
+(org-clock-persistence-insinuate)
 (setq org-todo-keywords
 '((sequence "TODO" "PROGRESS" "WAIT" "TESTING" "REPORT" "|" "DONE")
   (sequence "BUG" "FEATURE" "|" "FIXED")
