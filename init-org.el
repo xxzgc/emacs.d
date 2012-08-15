@@ -9,6 +9,9 @@
 
 (setq org-clock-persist 'history)
 (org-clock-persistence-insinuate)
+
+;; log into :LOGBOOK: drawer
+(setq org-clock-into-drawer t)
 (setq org-todo-keywords
 '((sequence "TODO" "PROGRESS" "WAIT" "TESTING" "REPORT" "|" "DONE")
   (sequence "BUG" "FEATURE" "|" "FIXED")
