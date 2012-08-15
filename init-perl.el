@@ -23,6 +23,7 @@
 
 ;; SEPIA -  Simple Emacs-Perl Interface
 (setq load-path (cons "~/.emacs.d/packages/sepia" load-path))
+(require 'sepia)
 
 ;;
 ;; cpanm Devel::PerlySense
