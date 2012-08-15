@@ -32,7 +32,4 @@
                                  "~/Documents/org/home.org"
                                  "~/Documents/org/development.org")))
 
-(if (string= (system-name) "taryk-workstation")
-    (setq org-agenda-files (list "~/Documents/org/maytech_projects.org")))
-
 (provide 'init-org)
