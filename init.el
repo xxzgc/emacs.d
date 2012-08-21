@@ -1,3 +1,5 @@
+(require 'cl)
+
 (defconst emacs-start-time (current-time))
 
 ;; exec path
@@ -14,8 +16,6 @@
 ;;           ess-mode-hook python-mode-hook sh-mode-hook))
 
 (load-file "~/.emacs.d/custom.el")
-
-(require 'init-cc)
 
 (require 'init-general-defuns)
 
@@ -55,17 +55,48 @@
 
 (require 'init-autocomplete)
 
+(require 'init-package)
+
+(require 'init-cc)
+
 (require 'init-cmake)
 
-(require 'init-common-lisp)
+;; (require 'init-common-lisp)
+(def-custom-package
+  :package-name 'common-lisp
+  :mode '((common-lisp-mode "\\.clisp$"))
+  :line-numbers t
+  :init-package t)
 
-(require 'init-perl)
+;; (require 'init-perl)
+(def-custom-package
+  :package-name 'perl
+  :mode '((cperl-mode "\\.pl$" "\\.pm$" "\\.PL$" "\\.t$")
+          (xs-mode "\\.xs")
+          (tt-mode "\\.tt"))
+  :line-numbers t
+  :init-package t)
 
-(require 'init-ruby)
+;; (require 'init-ruby)
+(def-custom-package
+  :package-name 'ruby
+  :mode '((ruby-mode "\\.rb$"))
+  :line-numbers t
+  :init-package t)
 
-(require 'init-php)
+;; (require 'init-php)
+(def-custom-package
+  :package-name 'php
+  :mode '((ruby-mode "\\.php$"))
+  :line-numbers t
+  :init-package t)
 
-(require 'init-lua)
+;; (require 'init-lua)
+(def-custom-package
+  :package-name 'lua
+  :mode '((lua-mode "\\.lua$"))
+  :line-numbers t
+  :init-package t)
 
 (require 'init-org)
 
@@ -73,13 +104,28 @@
 
 (require 'init-sqlite)
 
-(require 'init-js)
+;; (require 'init-js)
+(def-custom-package
+  :package-name 'js
+  :mode '((js2-mode "\\.js$" "\\.json$"))
+  :line-numbers t
+  :init-package t)
 
-(require 'init-yaml)
+;; (require 'init-yaml)
+(def-custom-package
+  :package-name 'yaml
+  :mode '((yaml-mode "\\.yaml$"))
+  :line-numbers t
+  :init-package t)
 
-(require 'init-python)
+;; (require 'init-python)
 
-(require 'init-elisp)
+;; (require 'init-elisp)
+(def-custom-package
+  :package-name 'elisp
+  :mode '((emacs-lisp-mode "\\.el$"))
+  :line-numbers t
+  :init-package t)
 
 (require 'init-ecb)
 
@@ -89,11 +135,26 @@
 
 (require 'init-heroku)
 
-(require 'init-clojure)
+;; (require 'init-clojure)
+(def-custom-package
+  :package-name 'clojure
+  :mode '((clojure-mode "\\.clj$"))
+  :line-numbers t
+  :init-package t)
 
-(require 'init-haskell)
+;; (require 'init-haskell)
+(def-custom-package
+  :package-name 'haskell
+  :mode '((haskell-mode "\\.hs$"))
+  :line-numbers t
+  :init-package t)
 
-(require 'init-shell-script)
+;; (require 'init-shell-script)
+(def-custom-package
+  :package-name 'shell-script
+  :mode '((shell-script-mode "\\.sh$" "\\.bash$" "\\.zsh$" "^.zshrc$" "^.bashrc$"))
+  :line-numbers t
+  :init-package t)
 
 (require 'init-mmm)
 
