@@ -87,7 +87,7 @@
 ;; (require 'init-php)
 (def-custom-package
   :package-name 'php
-  :mode '((ruby-mode "\\.php$"))
+  :mode '((php-mode "\\.php$"))
   :line-numbers t
   :init-package t)
 
