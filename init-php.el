@@ -5,9 +5,7 @@
 ;;   '("\\.php[34]$" "\\.phtml$" "\\.module$" "\\.inc$"))
 
 (add-hook 'php-mode-hook
-          (lambda ()
-            (linum-mode 1)
-            
+          (lambda ()          
             (require 'php-completion)
             (php-completion-mode t)
             (define-key php-mode-map (kbd "C-o") 'phpcmp-complete)
