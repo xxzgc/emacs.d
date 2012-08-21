@@ -83,56 +83,50 @@
   "Display a warning to the user, using lwarn"
   (lwarn 'flymake :warning warning))
 
-;;
-;; cperl hook
-;;
-(add-hook 'cperl-mode-hook 'n-cperl-mode-hook t)
-(defun n-cperl-mode-hook ()
-  (setq cperl-indent-level 2)
-  (setq cperl-continued-statement-offset 0)
-  (setq cperl-extra-newline-before-brace nil)
-  (setq cperl-indent-parens-as-block t)
-  (setq cperl-electric-parens t)
-  (setq cperl-electric-keywords t)
+(setq cperl-indent-level 2)
+(setq cperl-continued-statement-offset 0)
+(setq cperl-extra-newline-before-brace nil)
+(setq cperl-indent-parens-as-block t)
+(setq cperl-electric-parens t)
+(setq cperl-electric-keywords t)
 
-  (setq cperl-highlight-variables-indiscriminately t)
-  ; (set-face-background 'cperl-array-face "wheat")
-  ; (set-face-background 'cperl-hash-face "wheat")
+(setq cperl-highlight-variables-indiscriminately t)
+; (set-face-background 'cperl-array-face "wheat")
+; (set-face-background 'cperl-hash-face "wheat")
 
 
-  (local-set-key (kbd "C-h f") 'cperl-perldoc)
-  
-  ;; flymake
-  (flymake-mode t)
+(local-set-key (kbd "C-h f") 'cperl-perldoc)
 
-  ;; man completion
-  (eval-after-load "man" '(require 'man-completion))
+;; flymake
+(flymake-mode t)
 
-  (setq man-completion-at-point-functions
-         '(man-completion-transform-perl
-           man-completion-transform-poco))
+;; man completion
+(eval-after-load "man" '(require 'man-completion))
 
-  ;; enable perl-completion
-  (require 'perl-completion)
-  (perl-completion-mode t)
+(setq man-completion-at-point-functions
+       '(man-completion-transform-perl
+         man-completion-transform-poco))
 
-  (when (require 'auto-complete nil t) ; no error whatever auto-complete.el is not installed.
-    (auto-complete-mode t)
-    (make-variable-buffer-local 'ac-sources)
-    (setq ac-sources
-      '(ac-source-perl-completion)
-    )
+;; enable perl-completion
+(require 'perl-completion)
+(perl-completion-mode t)
+
+(when (require 'auto-complete nil t) ; no error whatever auto-complete.el is not installed.
+  (auto-complete-mode t)
+  (make-variable-buffer-local 'ac-sources)
+  (setq ac-sources
+    '(ac-source-perl-completion)
   )
-  
-  (custom-set-faces
-    '(cperl-array-face ((t (:foreground "green" :weight bold))))
-    ;; '(cperl-hash-face ((t (:foreground "Red" :slant italic :weight bold))))
-    '(cperl-hash-face ((t (:foreground "orange red" :weight bold)))))
-
-  (setq cperl-electric-keywords nil)
-  ;; (init-pde)
-  ;; (init-perlysence)
 )
+
+(custom-set-faces
+  '(cperl-array-face ((t (:foreground "green" :weight bold))))
+  ;; '(cperl-hash-face ((t (:foreground "Red" :slant italic :weight bold))))
+  '(cperl-hash-face ((t (:foreground "orange red" :weight bold)))))
+
+(setq cperl-electric-keywords nil)
+;; (init-pde)
+;; (init-perlysence)
 
 (defun init-pde ()
   (interactive)
