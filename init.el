@@ -80,7 +80,7 @@
 ;; (require 'init-ruby)
 (def-custom-package
   :package-name 'ruby
-  :mode '((ruby-mode "\\.rb$"))
+  :mode '((ruby-mode "\\.rb$" "\\.rsel$" "\\.rhtml$" "\\.erb$" "\\.prawn$" "Rakefile$" "Gemfile$"))
   :line-numbers t
   :init-package t)
 
