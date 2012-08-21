@@ -211,19 +211,19 @@
       (replace-regexp-in-string "/" "::" 
         (match-string 1 package-file)))))
 
-;; Perl scripts/modules
-(set-mode-for-filename-patterns 
-  'cperl-mode
-  '("\\.pl$" "\\.pm$" "\\.p6$" "\\.PL$" "\\.t$"))
+;; ;; Perl scripts/modules
+;; (set-mode-for-filename-patterns 
+;;   'cperl-mode
+;;   '("\\.pl$" "\\.pm$" "\\.p6$" "\\.PL$" "\\.t$"))
 
-;; Template Toolkit
-(set-mode-for-filename-patterns 
-  'tt-mode
-  '("\\.tt$"))
+;; ;; Template Toolkit
+;; (set-mode-for-filename-patterns 
+;;   'tt-mode
+;;   '("\\.tt$"))
 
-;; XS
-(set-mode-for-filename-patterns 
-  'xs-mode
-  '("\\.xs$"))
+;; ;; XS
+;; (set-mode-for-filename-patterns 
+;;   'xs-mode
+;;   '("\\.xs$"))
 
 (provide 'init-perl)
