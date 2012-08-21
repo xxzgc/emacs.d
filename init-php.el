@@ -1,12 +1,8 @@
 (load "php-mode")
 
-;; (add-to-list 'auto-mode-alist '("\\.php[34]?\\'\\|\\.phtml\\'" . php-mode))
-;; (add-to-list 'auto-mode-alist '("\\.module\\'" . php-mode))
-;; (add-to-list 'auto-mode-alist '("\\.inc\\'" . php-mode))
-
-(set-mode-for-filename-patterns 
-  'php-mode
-  '("\\.php[34]$" "\\.phtml$" "\\.module$" "\\.inc$"))
+;; (set-mode-for-filename-patterns 
+;;   'php-mode
+;;   '("\\.php[34]$" "\\.phtml$" "\\.module$" "\\.inc$"))
 
 (add-hook 'php-mode-hook
           (lambda ()
