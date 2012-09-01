@@ -64,7 +64,7 @@
 ;; (require 'init-common-lisp)
 (def-custom-package
   :package-name 'common-lisp
-  :mode '((common-lisp-mode "\\.clisp$"))
+  :mode '((common-lisp-mode "\\.clisp$" "\\.lisp$"))
   :line-numbers t
   :init-package t)
 
@@ -72,8 +72,8 @@
 (def-custom-package
   :package-name 'perl
   :mode '((cperl-mode "\\.pl$" "\\.pm$" "\\.PL$" "\\.t$")
-          (xs-mode "\\.xs")
-          (tt-mode "\\.tt"))
+          (xs-mode "\\.xs$")
+          (tt-mode "\\.tt$" "\\.tmpl$"))
   :line-numbers t
   :init-package t)
 
