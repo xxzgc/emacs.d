@@ -309,4 +309,10 @@ If point was already at that position, move point to beginning of line."
     (insert-file-contents file)
     (buffer-string)))
 
+(defun write-region-to-file (start end filename)
+  "function takes current region, and writes it to specified file"
+  (interactive "r\nFFilename: ")
+  (write-region start end filename t)
+  (kill-region start end))
+
 (provide 'init-general-defuns)
