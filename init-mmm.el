@@ -2,8 +2,9 @@
 
 (require 'mmm-mode)
 (require 'mmm-auto)
+(require 'mmm-erb)
 
-(setq mmm-global-mode 'maybe)
+(setq mmm-global-mode 'auto)
 (setq mmm-submode-decoration-level 0)
 
 (mmm-add-group
@@ -14,30 +15,15 @@
     :front "\\[%"
     :back "%\\]"
     :include-front t
-    :include-back t)
-;;    :insert ((?= embtt nil @ "[%" @ " " _ " " @ "%]" @)))
-;;   (js-script-cdata
-;;    :submode js2-mode
-;;    :face mmm-code-submode-face
-;;    :front "<script[^>]*>[ \t\n]*\\(//\\)?<!\\[CDATA\\[[ \t]*\n?"
-;;    :back "[ \t]*\\(//\\)?]]>[ \t\n]*</script>")
-   (js-script
-    :submode js-mode
-    :face mmm-code-submode-face
-    :front "<script[^>]*>[ \t]*\n?"
-    :back "[ \t]*</script>")
-   (css-style
-    :submode css-mode
-    :face mmm-code-submode-face
-    :front "<style[^>]*>[ \t]*\n?"
-    :back "[ \t]*</style>")))
-;;    :insert ((?j js-tag nil @ "<script type=\"text/javascript\">\n"
-;;                 @ "" _ "" @ "\n</script>" @)))))
+    :include-back t)))
+;;  :insert ((?% embtt-tag nil @ "[%" @ " " _ " " @ "%]" @)))))
 
-(add-to-list 'mmm-mode-ext-classes-alist '(html-mode nil html-js2))
+;; add-to-list 'mmm-mode-ext-classes-alist '(html-mode nil html-js2))
 
 ;; nXML as primary mode (supports only JS and CSS subregions):
+
 (mmm-add-mode-ext-class 'nxml-web-mode nil 'html-tmpl)
-;;(mmm-add-mode-ext-class 'nxml-web-mode nil 'html-css)
+(mmm-add-mode-ext-class 'nxml-web-mode nil 'html-js)
+(mmm-add-mode-ext-class 'nxml-web-mode nil 'html-css)
 
 (provide 'init-mmm)
