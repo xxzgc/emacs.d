@@ -61,6 +61,14 @@
 
 (require 'init-cmake)
 
+;; (require 'init-mmm)
+
+(def-custom-package
+  :package-name 'mmm
+  :mode '((nxml-web-mode "\\.tmpl$"))
+  :line-numbers t
+  :init-package t)
+
 ;; (require 'init-common-lisp)
 (def-custom-package
   :package-name 'common-lisp
@@ -73,7 +81,7 @@
   :package-name 'perl
   :mode '((cperl-mode "\\.pl$" "\\.pm$" "\\.PL$" "\\.t$")
           (xs-mode "\\.xs$")
-          (tt-mode "\\.tt$" "\\.tmpl$"))
+          (tt-mode "\\.tt$"))
   :line-numbers t
   :init-package t)
 
@@ -155,8 +163,6 @@
   :mode '((shell-script-mode "\\.sh$" "\\.bash$" "\\.zsh$" "^.zshrc$" "^.bashrc$"))
   :line-numbers t
   :init-package t)
-
-(require 'init-mmm)
 
 ;; (require 'init-nxhtml)
 
