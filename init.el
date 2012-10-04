@@ -83,7 +83,7 @@
 ;; (require 'init-perl)
 (def-custom-package
   :package-name 'perl
-  :mode '((cperl-mode "\\.pl$" "\\.pm$" "\\.PL$" "\\.t$")
+  :mode '((cperl-mode "\\.pl$" "\\.pm$" "\\.PL$" "\\.t$" "\\.cgi$")
           (xs-mode "\\.xs$")
           (tt-mode "\\.tt$"))
   :line-numbers t

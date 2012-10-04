@@ -107,3 +107,6 @@
 ;; (setq display-time-interval 1)
 ;; (setq display-time-format "%Y.%m.%d %H:%M:%S")
 ;; (display-time-mode)
+
+;; C-x C-n
+(put 'set-goal-column 'disabled nil)
