@@ -39,6 +39,8 @@
 
 (require 'init-iedit)
 
+(require 'init-multiplecursors)
+
 (require 'init-w3m)
 
 (require 'init-multiterm)
@@ -178,6 +180,7 @@
 (require 'server)
 (unless (server-running-p)
   (server-start))
+
 
 
 ;; # Local Variables:
