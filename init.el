@@ -37,6 +37,8 @@
 
 (require 'init-minimap)
 
+(require 'init-iedit)
+
 (require 'init-w3m)
 
 (require 'init-multiterm)
