@@ -1,0 +1,33 @@
+# compiled files
+#-----------------------
+*.elc
+*.so
+*.zwc
+
+# private
+#-----------------------
+# private/*
+
+# cache
+#-----------------------
+ac-comphist.dat
+.org-id-locations
+abbrev_defs
+tramp
+
+# temporary files
+#-----------------------
+*~
+*#
+.#*
+
+# backup
+#-----------------------
+backup/*
+auto-save-list/*
+
+# logs
+#-----------------------
+org-clock-save.el
+logs/*
+
