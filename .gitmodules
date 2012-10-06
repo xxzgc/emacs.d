@@ -1,0 +1,83 @@
+[submodule "packages/ahg"]
+	path = packages/ahg
+	url = https://bitbucket.org/agriggio/ahg
+
+[submodule "packages/clojure-mode"]
+	path = packages/clojure-mode
+	url = https://github.com/technomancy/clojure-mode.git
+
+[submodule "packages/egg"]
+	path = packages/egg
+	url = https://github.com/byplayer/egg.git
+
+[submodule "packages/egit"]
+	path = packages/egit
+	url = https://github.com/jimhourihan/egit.git
+
+[submodule "packages/emacs-juick-el"]
+	path = packages/emacs-juick-el
+	url = https://github.com/mad/emacs-juick-el.git
+
+[submodule "packages/emacs-soap-client"]
+	path = packages/emacs-soap-client
+	url = https://code.google.com/p/emacs-soap-client/
+
+[submodule "packages/nyan-mode"]
+	path = packages/nyan-mode
+	url = https://github.com/TeMPOraL/nyan-mode.git
+
+[submodule "packages/ublog"]
+	path = packages/ublog
+	url = https://github.com/artagnon/ublog.el.git
+
+[submodule "packages/heroku"]
+	path = packages/heroku
+	url = https://github.com/technomancy/heroku.el.git
+
+[submodule "packages/cc-mode"]
+	path = packages/cc-mode
+	url = https://github.com/emacsmirror/cc-mode.git
+
+[submodule "packages/haskell-mode"]
+	path = packages/haskell-mode
+	url = https://github.com/haskell/haskell-mode.git
+
+[submodule "packages/yasnippet"]
+	path = packages/yasnippet
+	url = https://github.com/capitaomorte/yasnippet.git
+
+[submodule "packages/linum-relative"]
+	path = packages/linum-relative
+	url = https://github.com/coldnew/linum-relative.git
+
+[submodule "packages/emacs-functions-for-perl"]
+	path = packages/emacs-functions-for-perl
+	url = https://github.com/taryk/emacs-functions-for-perl.git
+
+[submodule "packages/zenburn-emacs"]
+	path = packages/zenburn-emacs
+	url = https://github.com/bbatsov/zenburn-emacs.git
+
+[submodule "packages/emacs-ide"]
+	path = packages/emacs-ide
+	url = https://github.com/emacsmirror/emacs-ide.git
+
+[submodule "packages/haml-mode"]
+	path = packages/haml-mode
+	url = https://github.com/nex3/haml-mode.git
+
+[submodule "packages/multiple-cursors.el"]
+	path = packages/multiple-cursors.el
+	url = https://github.com/magnars/multiple-cursors.el.git
+
+[submodule "packages/pymacs"]
+	path = packages/pymacs
+	url = https://github.com/pinard/Pymacs.git
+
+[submodule "packages/mmm-mode"]
+        path = packages/mmm-mode
+        url = https://github.com/purcell/mmm-mode.git
+
+[submodule "packages/perspective"]
+        path = packages/perspective
+        url = https://github.com/nex3/perspective-el.git
