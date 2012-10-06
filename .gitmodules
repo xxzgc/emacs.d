@@ -81,3 +81,6 @@
 [submodule "packages/perspective"]
         path = packages/perspective
         url = https://github.com/nex3/perspective-el.git
+[submodule "packages/mark-multiple"]
+	path = packages/mark-multiple
+	url = https://github.com/magnars/mark-multiple.el.git

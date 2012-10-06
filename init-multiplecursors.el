@@ -1,4 +1,5 @@
 (add-to-list 'load-path "~/.emacs.d/packages/multiple-cursors.el/")
+(add-to-list 'load-path "~/.emacs.d/packages/mark-multiple/")
 
 (require 'multiple-cursors)
 
