@@ -84,3 +84,6 @@
 [submodule "packages/mark-multiple"]
 	path = packages/mark-multiple
 	url = https://github.com/magnars/mark-multiple.el.git
+[submodule "packages/js2-refactor"]
+	path = packages/js2-refactor
+	url = https://github.com/magnars/js2-refactor.el.git
