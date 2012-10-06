@@ -125,8 +125,8 @@
 ;;
 ;; workspaces
 ;;
-(define-key global-map (kbd "C-<tab>") 'workspace-controller)
-(define-key global-map [C-S-iso-lefttab] 'workspace-controller) ;; c-<tab> not working in org-mode
+;; (define-key global-map (kbd "C-<tab>") 'workspace-controller)
+;; (define-key global-map [C-S-iso-lefttab] 'workspace-controller) ;; c-<tab> not working in org-mode
 ;; (global-set-key [?\C-q] 'workspace-goto)
 
 ;;
