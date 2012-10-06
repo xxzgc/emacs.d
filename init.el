@@ -29,7 +29,8 @@
 
 (require 'init-nyan)
 
-(require 'init-workspaces)
+;; (require 'init-workspaces)
+(require 'init-perspective)
 
 (require 'init-linum)
 
