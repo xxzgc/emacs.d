@@ -50,10 +50,6 @@
 	path = packages/linum-relative
 	url = https://github.com/coldnew/linum-relative.git
 
-[submodule "packages/emacs-functions-for-perl"]
-	path = packages/emacs-functions-for-perl
-	url = https://github.com/taryk/emacs-functions-for-perl.git
-
 [submodule "packages/zenburn-emacs"]
 	path = packages/zenburn-emacs
 	url = https://github.com/bbatsov/zenburn-emacs.git

@@ -9,10 +9,6 @@
 ;;             (unless (boundp 'init-perl-module) (init-perl))))
 
 
-;; emacs-functions-for-perl
-(setq load-path (cons "~/.emacs.d/packages/emacs-functions-for-perl" load-path))
-(require 'functions-for-perl)
-
 ;; xs-mode
 (require 'xs-mode)
 (autoload 'xs-mode "xs-mode" "Major mode for XS files" t)
