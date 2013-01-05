@@ -87,3 +87,6 @@
 [submodule "packages/js2-refactor"]
 	path = packages/js2-refactor
 	url = https://github.com/magnars/js2-refactor.el.git
+[submodule "packages/markdown-mode"]
+	path = packages/markdown-mode
+	url = git://jblevins.org/git/markdown-mode.git

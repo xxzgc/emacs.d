@@ -169,6 +169,12 @@
   :line-numbers t
   :init-package t)
 
+(def-custom-package
+  :package-name 'markdown
+  :mode '((markdown-mode "\\.md$" "\\.mdwn$" "\\.mdt$"))
+  :line-numbers t
+  :init-package t)
+
 ;; (require 'init-nxhtml)
 
 (require 'init-profile)
