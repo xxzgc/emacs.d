@@ -86,3 +86,6 @@
 [submodule "packages/markdown-mode"]
 	path = packages/markdown-mode
 	url = git://jblevins.org/git/markdown-mode.git
+[submodule "packages/twilight-emacs"]
+	path = packages/twilight-emacs
+	url = git://github.com/crafterm/twilight-emacs.git
