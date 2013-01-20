@@ -10,6 +10,8 @@
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/packages/"))
 
+(add-to-list 'load-suffixes ".el.gpg")
+
 ;; (mapc (lambda (mode-hook) (add-hook mode-hook 'turn-on-watchwords))
 ;;         '(c-mode-common-hook tcl-mode-hook emacs-lisp-mode-hook
 ;;           ruby-mode-hook java-mode-hook haskell-mode-hook

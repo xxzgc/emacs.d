@@ -1,8 +1,12 @@
 (add-to-list 'load-path "~/.emacs.d/packages/emacs-jabber-0.8.91/")
 (require 'jabber)
 
-;; jabber params
-(load-file "~/.emacs-private/auth-jabber.el")
+;; GPG encrypted jabber auth info
+;; to encrypt your `auth-jabber.el` with a password just run:
+;; `gpg -c auth-jabber.el`
+(defun init-jabber()
+  (interactive)
+  (load-file "~/.emacs-private/auth-jabber.el.gpg"))
 
 (custom-set-variables
  '(jabber-alert-presence-hooks nil)

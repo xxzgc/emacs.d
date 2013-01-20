@@ -41,8 +41,12 @@
 ;; (erc-autojoin
 ;;    (("irc.freenode.net" "irc.perl.org") "#perl"))
 
-;; auth info
-(load-file "~/.emacs-private/auth-irc.el")
+;; GPG encrypted auth info
+;; to encrypt your `auth-irc.el` with a password just run:
+;; `gpg -c auth-irc.el`
+(defun init-irc ()
+  (interactive)
+  (load-file "~/.emacs-private/auth-irc.el.gpg"))
 
 ;; }}
 (provide 'init-irc)
