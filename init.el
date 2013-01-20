@@ -175,6 +175,12 @@
   :line-numbers t
   :init-package t)
 
+(def-custom-package
+  :package-name 'sml
+  :mode '((sml-mode "\\.sml$"))
+  :line-numbers t
+  :init-package t)
+
 ;; (require 'init-nxhtml)
 
 (require 'init-profile)

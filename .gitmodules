@@ -89,3 +89,6 @@
 [submodule "packages/twilight-emacs"]
 	path = packages/twilight-emacs
 	url = git://github.com/crafterm/twilight-emacs.git
+[submodule "sml-mode"]
+	path = packages/sml-mode
+	url = git://github.com/emacsmirror/sml-mode.git
