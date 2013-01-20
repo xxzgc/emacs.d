@@ -315,4 +315,14 @@ If point was already at that position, move point to beginning of line."
   (write-region start end filename t)
   (kill-region start end))
 
+(defun regexp-revert (regexp)
+  "Revert all buffers whose path matches regexp"
+  (interactive "sPath Regexp: ")
+  (dolist (buffer (buffer-list))
+    (if (string-match-p regexp (or (buffer-file-name buffer) ""))
+        (progn
+          (set-buffer buffer)
+          (revert-buffer nil t)
+          (message "Reverting %s" (buffer-file-name buffer))))))
+
 (provide 'init-general-defuns)
