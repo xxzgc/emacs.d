@@ -33,6 +33,9 @@
 
 (add-hook 'erc-text-matched-hook 'erc-global-notify)
 
+;; timestamp the conversations
+(erc-timestamp-mode 1)
+
 ;; (asf-erc-bouncer-connect erc-freenode "irc.freenode.net" 6667 "newbie" nil "pass1")
 ;; ssl connecion:
 ;; (asf-erc-bouncer-connect erc-freenodessl "irc.freenode.net" 6697 "newbie" t nil)
