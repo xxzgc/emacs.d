@@ -4,22 +4,37 @@
 
 (custom-set-variables
  '(erc-log-channels-directory "~/.emacs-irc-log")
+ '(erc-save-buffer-on-part t)
  '(erc-log-insert-log-on-open t)
  '(erc-log-mode t)
- '(erc-log-write-after-send t))
+ '(erc-log-write-after-send t)
+ '(erc-log-write-after-insert t))
 
 (defmacro asf-erc-bouncer-connect (command server port nick ssl pass)
-   "Create interactive command `command', for connecting to an IRC server. The
-   command uses interactive mode if passed an argument."
+   "Create interactive command `command', for connecting to an IRC server. The command uses interactive mode if passed an argument."
    (fset command
          `(lambda (arg)
            (interactive "p")
-	   (if (not (= 1 arg))
-	       (call-interactively 'erc)
-	     (let ((erc-connect-function ',(if ssl
-			       'erc-open-ssl-stream
-			 		     'open-network-stream)))
- 	       (erc :server ,server :port ,port :nick ,nick :password ,pass))))))
+           (if (not (= 1 arg))
+               (call-interactively 'erc)
+             (let ((erc-connect-function ',(if ssl
+                                               'erc-open-ssl-stream
+                                             'open-network-stream)))
+               (erc :server ,server :port ,port :nick ,nick :password ,pass))))))
+
+(require 'notifications)
+(defun erc-global-notify (match-type nick message)
+  "Notify when a message is recieved."
+  (notifications-notify
+   :title nick
+   :body message
+   :app-icon "/usr/share/notify-osd/icons/gnome/scalable/status/notification-message-im.svg"
+   :urgency 'critical))
+
+(add-hook 'erc-text-matched-hook 'erc-global-notify)
+
+;; timestamp the conversations
+(erc-timestamp-mode 1)
 
 ;; (asf-erc-bouncer-connect erc-freenode "irc.freenode.net" 6667 "newbie" nil "pass1")
 ;; ssl connecion:
