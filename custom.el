@@ -6,7 +6,8 @@
 
 ;; Default browser
 ;; used by `browser-url` function
-(setq browse-url-generic-program "/usr/bin/chromium-browser")
+(setq browse-url-browser-function 'browse-url-generic
+      browse-url-generic-program "/usr/bin/chromium-browser")
 
 ;; Line by line scrolling
 ;; This makes the buffer scroll by only a single line when the up or
