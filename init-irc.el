@@ -5,7 +5,7 @@
 (custom-set-variables
  '(erc-log-channels-directory "~/.emacs-irc-log")
  '(erc-save-buffer-on-part t)
- '(erc-log-insert-log-on-open t)
+ '(erc-log-insert-log-on-open nil)
  '(erc-log-mode t)
  '(erc-log-write-after-send t)
  '(erc-log-write-after-insert t))
