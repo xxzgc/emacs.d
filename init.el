@@ -70,6 +70,13 @@
 
 ;; (require 'init-mmm)
 
+;; Geiser package together with scheme-mode
+(def-custom-package
+  :package-name 'geiser
+  :mode '((scheme-mode "\\.scm$" "\\.ss$" "\\.rkt$"))
+  :line-numbers t
+  :init-package t)
+
 (def-custom-package
   :package-name 'mmm
   :mode '((nxml-web-mode "\\.tmpl$"))

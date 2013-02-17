@@ -92,3 +92,6 @@
 [submodule "sml-mode"]
 	path = packages/sml-mode
 	url = git://github.com/emacsmirror/sml-mode.git
+[submodule "packages/geiser"]
+	path = packages/geiser
+	url = git://github.com/jaor/geiser.git
