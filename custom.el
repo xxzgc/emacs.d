@@ -84,6 +84,10 @@
 ;; Save all backup file in this directory.
 (setq backup-directory-alist (quote ((".*" . "~/.emacs_backups/"))))
 
+;; local variables ( .dir-locals.el )
+(setq enable-local-variables t)
+(setq enable-local-eval nil)
+
 ;; Set cursor and mouse-pointer colours
 (set-cursor-color "red")
 (set-mouse-color "goldenrod")
