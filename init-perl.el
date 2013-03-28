@@ -78,7 +78,7 @@
   "Display a warning to the user, using lwarn"
   (lwarn 'flymake :warning warning))
 
-(setq cperl-indent-level 2)
+(setq cperl-indent-level 4)
 (setq cperl-continued-statement-offset 0)
 (setq cperl-extra-newline-before-brace nil)
 (setq cperl-indent-parens-as-block t)
