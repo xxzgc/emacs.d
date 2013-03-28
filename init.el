@@ -190,6 +190,12 @@
   :line-numbers t
   :init-package t)
 
+(def-custom-package
+  :package-name 'scala
+  :mode '((scala-mode2 "\\.scala$" "\\.sc$"))
+  :line-numbers t
+  :init-package t)
+
 ;; (require 'init-nxhtml)
 
 (require 'init-profile)
