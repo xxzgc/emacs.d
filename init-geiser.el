@@ -7,8 +7,8 @@
 ;;                 '((dir "/home/jao/prj/frob") guile)))
 
 
-(add-to-list 'geiser-implementations-alist '(("\\.scm$" guile)
-                                             ("\\.ss$" racket)
-                                             ("\\.rkt$" racket)))
+;;(add-to-list 'geiser-implementations-alist '(("\\.scm$" guile)
+;;                                             ("\\.ss$" racket)
+;;                                             ("\\.rkt$" racket)))
 
 (provide 'init-geiser)
