@@ -1,7 +1,8 @@
 ;; {{
 ;; Perl
 (defvar init-perl-module)
-
+(add-to-list 'load-path "~/.emacs.d/packages/cperl-mode")
+(require 'cperl-mode)
 (defalias 'perl-mode 'cperl-mode)
 
 ;; (add-hook 'cperl-mode-hook 

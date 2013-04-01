@@ -98,3 +98,6 @@
 [submodule "packages/scala-mode2"]
 	path = packages/scala-mode2
 	url = git://github.com/hvesalai/scala-mode2.git
+[submodule "packages/cperl-mode"]
+	path = packages/cperl-mode
+	url = git://github.com/jrockway/cperl-mode.git
