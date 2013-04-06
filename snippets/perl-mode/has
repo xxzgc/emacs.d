@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: has attribute => ( ... );
+# key: has
+# --
+has ${1:attribute} => (
+    $0
+);
