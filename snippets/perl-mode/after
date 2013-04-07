@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: after name => sub { ... }
+# key: after
+# --
+after ${1:name} => sub {
+    $0
+};
