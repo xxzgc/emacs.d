@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: before name => sub { ... }
+# key: before
+# --
+before ${1:name} => sub {
+    $0
+};
