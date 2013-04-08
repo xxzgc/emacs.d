@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: extends 'name'
+# key: extends
+# --
+extends '${1:name}'
