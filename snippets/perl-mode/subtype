@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: subtype '...', as '...', where { ... }, message { ... };
+# key: subtype
+# --
+subtype '${1:subtype}',
+    as '${2:type}',
+    where { ${3:expr} },
+    message { "${4:message}" };
+$0
