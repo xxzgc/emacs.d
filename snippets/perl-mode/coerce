@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: coerce '...', from '...', via { expr };
+# key: coerce
+# --
+coerce '${1:type}',
+    from '${2:from_type}',
+    via { ${3:expr} };
+$0
