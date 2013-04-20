@@ -325,4 +325,18 @@ If point was already at that position, move point to beginning of line."
           (revert-buffer nil t)
           (message "Reverting %s" (buffer-file-name buffer))))))
 
+(defun revert-all-buffers ()
+  "Refreshes all open buffers from their respective files"
+  (interactive)
+  (let* ((list (buffer-list))
+         (buffer (car list)))
+    (while buffer
+      (when (and (buffer-file-name buffer) 
+                 (not (buffer-modified-p buffer)))
+        (set-buffer buffer)
+        (revert-buffer t t t))
+      (setq list (cdr list))
+      (setq buffer (car list))))
+  (message "Refreshed open files"))
+
 (provide 'init-general-defuns)
