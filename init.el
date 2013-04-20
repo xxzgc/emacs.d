@@ -68,6 +68,8 @@
 
 (require 'init-cmake)
 
+(require 'init-project)
+
 ;; (require 'init-mmm)
 
 ;; Geiser package together with scheme-mode

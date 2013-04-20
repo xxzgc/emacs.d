@@ -101,3 +101,6 @@
 [submodule "packages/cperl-mode"]
 	path = packages/cperl-mode
 	url = git://github.com/jrockway/cperl-mode.git
+[submodule "packages/find-file-in-project"]
+	path = packages/find-file-in-project
+	url = git://github.com/technomancy/find-file-in-project.git
