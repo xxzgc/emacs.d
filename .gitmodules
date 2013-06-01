@@ -104,3 +104,18 @@
 [submodule "packages/find-file-in-project"]
 	path = packages/find-file-in-project
 	url = git://github.com/technomancy/find-file-in-project.git
+[submodule "packages/auto-complete"]
+	path = packages/auto-complete
+	url = git://github.com/auto-complete/auto-complete.git
+[submodule "packages/Devel-PerlySense"]
+	path = packages/Devel-PerlySense
+	url = git://github.com/jplindstrom/p5-Devel-PerlySense.git
+[submodule "packages/emacs-pde"]
+	path = packages/emacs-pde
+	url = git://github.com/wenbinye/emacs-pde.git
+[submodule "packages/emacs-flymake"]
+	path = packages/emacs-flymake
+	url = git://github.com/illusori/emacs-flymake.git
+[submodule "packages/emacs-flymake-perlcritic"]
+	path = packages/emacs-flymake-perlcritic
+	url = git://github.com/illusori/emacs-flymake-perlcritic.git
