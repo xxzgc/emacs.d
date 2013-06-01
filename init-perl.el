@@ -49,12 +49,6 @@
 ;; ffap-perl-module
 (eval-after-load "ffap" '(require 'ffap-perl-module))
 
-;; PerlTidy
-(require 'perltidy)
-
-;; Perl::Critic
-(require 'perlcritic)
-
 ;; flymake
 (require 'flymake)
 (set-face-attribute 'flymake-errline nil 
@@ -127,7 +121,7 @@
 (defun init-pde ()
   (interactive)
   ;; PDE
-  (add-to-list 'load-path "~/.emacs.d/pde/")
+  (add-to-list 'load-path "~/.emacs.d/packages/emacs-pde/lisp/")
   (load "pde-load"))
 
 (defun init-perlysence ()
