@@ -159,7 +159,7 @@
   ;; ** Code Coverage Visualization **
   ;; If you have a Devel::CoverX::Covered database handy and want to
   ;; display the sub coverage in the source, set this to t
-  (setq ps/enable-test-coverage-visualization nil)
+  (setq ps/enable-test-coverage-visualization t)
 
   ;; ** Color Config **
   ;; Emacs named colors: http://www.geocities.com/kensanata/colors.html
