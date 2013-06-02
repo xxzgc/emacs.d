@@ -22,7 +22,10 @@
 (setq cperl-extra-newline-before-brace nil)
 (setq cperl-indent-parens-as-block t)
 (setq cperl-electric-parens t)
-(setq cperl-electric-keywords t)
+
+;; DON'T ENABLE `electric-keywords`!!!
+(setq cperl-electric-keywords nil)
+
 
 (setq cperl-highlight-variables-indiscriminately t)
 ; (set-face-background 'cperl-array-face "wheat")
