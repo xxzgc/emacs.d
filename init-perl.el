@@ -49,29 +49,6 @@
 ;; ffap-perl-module
 (eval-after-load "ffap" '(require 'ffap-perl-module))
 
-;; flymake
-(require 'flymake)
-(set-face-attribute 'flymake-errline nil 
-                    :underline "red" 
-                    :background nil)
-(set-face-attribute 'flymake-warnline nil
-                    :underline "yellow"
-                    :background nil)
-
-(setq flymake-log-level 3)
-
-(defun flymake-perl-init ()
-  (let* ((temp-file (flymake-init-create-temp-buffer-copy
-                     'flymake-create-temp-inplace))
-         (local-file (file-relative-name
-                      temp-file
-                      (file-name-directory buffer-file-name))))
-    (list (perlbrew-mini-get-current-perl-path)
-          (list "-MProject::Libs" "-wc" local-file))))
-
-(defun flymake-display-warning (warning) 
-  "Display a warning to the user, using lwarn"
-  (lwarn 'flymake :warning warning))
 
 (setq cperl-indent-level 4)
 (setq cperl-continued-statement-offset 0)
@@ -177,12 +154,7 @@
   ;; default color scheme.
   ;;  (set-face-background 'flymake-errline "antique white")
   ;;  (set-face-background 'flymake-warnline "lavender")
-  (set-face-attribute 'flymake-errline nil 
-                      :underline "red" 
-                      :background nil)
-  (set-face-attribute 'flymake-warnline nil
-                      :underline "yellow"
-                      :background nil)
+
   (set-face-background 'dropdown-list-face "lightgrey")
   (set-face-background 'dropdown-list-selection-face "grey")
 
