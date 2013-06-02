@@ -135,7 +135,7 @@
   ;; Flymake must be installed.
   ;; It is included in Emacs 22
   ;;     (or http://flymake.sourceforge.net/, put flymake.el in your load-path)
-  (setq ps/load-flymake t)
+  (setq ps/load-flymake nil)
   ;; Note: more flymake config below, after loading PerlySense
 
   ;; *** PerlySense load (don't touch) ***
@@ -163,8 +163,8 @@
 
   ;; ** Flymake Config **
   ;; If you only want syntax check whenever you save, not continously
-  (setq flymake-no-changes-timeout 9999)
-  (setq flymake-start-syntax-check-on-newline nil)
+  ;; (setq flymake-no-changes-timeout 9999)
+  ;; (setq flymake-start-syntax-check-on-newline nil)
 
   ;; ** Code Coverage Visualization **
   ;; If you have a Devel::CoverX::Covered database handy and want to
