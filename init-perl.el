@@ -155,6 +155,7 @@
   ;; hardcode external dir ;)
   (add-to-list 'load-path
                "~/.emacs.d/packages/Devel-PerlySense/source/lib/Devel/PerlySense/external/emacs")
+  (load "perly-sense")
 
   ;; ** Flymake Config **
   ;; If you only want syntax check whenever you save, not continously
