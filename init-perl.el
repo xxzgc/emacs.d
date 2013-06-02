@@ -1,5 +1,15 @@
-;; {{
-;; Perl
+;;; {{
+;;; Perl
+;;
+;; Used modules:
+;; * Devel::PerlySense
+;; * Devel::CoverX::Covered
+;; * Emacs::PDE
+;; * File::Corresponding
+;; * Project::Libs
+;; * App::perlbrew
+;; * ExtUtils::Installed
+;;
 (defvar init-perl-module)
 (add-to-list 'load-path "~/.emacs.d/packages/cperl-mode")
 (require 'cperl-mode)
@@ -20,13 +30,6 @@
 ;; SEPIA -  Simple Emacs-Perl Interface
 (setq load-path (cons "~/.emacs.d/packages/sepia" load-path))
 (require 'sepia)
-
-;;
-;; cpanm Devel::PerlySense
-;;       Devel::CoverX::Covered
-;;       File::Corresponding
-;;       Project::Libs
-;;       App::perlbrew
 
 ;; perlbrew-mini
 (require 'perlbrew-mini)
