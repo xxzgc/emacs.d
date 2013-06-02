@@ -109,7 +109,7 @@
 
 (setq cperl-electric-keywords nil)
 ;; (init-pde)
-;; (init-perlysence)
+;; (init-perlysense)
 
 ;; cd ~/.emacs.d/packages/emacs-pde/; perl Makefile.PL && make && make install
 (defun init-pde ()
@@ -118,7 +118,7 @@
   (add-to-list 'load-path "~/.emacs.d/packages/emacs-pde/lisp/")
   (load "pde-load"))
 
-(defun init-perlysence ()
+(defun init-perlysense ()
   (interactive)
   ;;
   ;; ** PerlySense **
