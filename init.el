@@ -42,7 +42,7 @@
 
 (require 'init-iedit)
 
-(require 'init-multiplecursors)
+;; (require 'init-multiplecursors)
 
 (require 'init-w3m)
 
@@ -169,11 +169,11 @@
   :init-package t)
 
 ;; (require 'init-haskell)
-(def-custom-package
-  :package-name 'haskell
-  :mode '((haskell-mode "\\.hs$"))
-  :line-numbers t
-  :init-package t)
+;; (def-custom-package
+;;   :package-name 'haskell
+;;   :mode '((haskell-mode "\\.hs$"))
+;;   :line-numbers t
+;;   :init-package t)
 
 ;; (require 'init-shell-script)
 (def-custom-package
