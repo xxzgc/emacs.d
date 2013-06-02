@@ -40,9 +40,10 @@
 
 (local-set-key (kbd "C-h f") 'cperl-perldoc)
 
-;; (add-hook 'cperl-mode-hook 
-;;           (lambda()
-;;             (unless (boundp 'init-perl-module) (init-perl))))
+(add-hook 'cperl-mode-hook 
+           (lambda()
+             (perl-completion-mode t)
+             (yas/minor-mode-on)))
 
 ;; xs-mode
 (require 'xs-mode)
