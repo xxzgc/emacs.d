@@ -54,6 +54,10 @@
 
 (require 'init-irc)
 
+(require 'init-autocomplete)
+
+(require 'init-yasnippet)
+
 (require 'init-flymake)
 
 (require 'init-ediff)
@@ -61,8 +65,6 @@
 (require 'init-git)
 
 (require 'init-mercurial)
-
-(require 'init-autocomplete)
 
 (require 'init-package)
 
@@ -125,8 +127,6 @@
   :init-package t)
 
 (require 'init-org)
-
-(require 'init-yasnippet)
 
 (require 'init-sqlite)
 
@@ -212,8 +212,6 @@
 (require 'server)
 (unless (server-running-p)
   (server-start))
-
-
 
 ;; # Local Variables:
 ;; # tab-width: 2
