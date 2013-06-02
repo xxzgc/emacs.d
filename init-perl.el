@@ -99,19 +99,13 @@
 
 ;; enable perl-completion
 (require 'perl-completion)
-(perl-completion-mode t)
 
 (when (require 'auto-complete nil t) ; no error whatever auto-complete.el is not installed.
   (auto-complete-mode t)
   (make-variable-buffer-local 'ac-sources)
-  (setq ac-sources
-    '(ac-source-perl-completion)
-  )
+  (setq ac-sources '(ac-source-perl-completion))
+  ;;(setq plcmp-extra-using-modules '("DBIx::Class::ResultSet" ("LWP::UserAgent" . "HTTP::Response"))
 )
-
-(setq cperl-electric-keywords nil)
-;; (init-pde)
-;; (init-perlysense)
 
 ;; cd ~/.emacs.d/packages/emacs-pde/; perl Makefile.PL && make && make install
 (defun init-pde ()
