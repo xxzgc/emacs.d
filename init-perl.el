@@ -11,9 +11,31 @@
 ;; * ExtUtils::Installed
 ;;
 (defvar init-perl-module)
+
+;; cperl-mode --
 (add-to-list 'load-path "~/.emacs.d/packages/cperl-mode")
 (require 'cperl-mode)
 (defalias 'perl-mode 'cperl-mode)
+
+(setq cperl-indent-level 4)
+(setq cperl-continued-statement-offset 0)
+(setq cperl-extra-newline-before-brace nil)
+(setq cperl-indent-parens-as-block t)
+(setq cperl-electric-parens t)
+(setq cperl-electric-keywords t)
+
+(setq cperl-highlight-variables-indiscriminately t)
+; (set-face-background 'cperl-array-face "wheat")
+; (set-face-background 'cperl-hash-face "wheat")
+
+;; cperl-mode faces
+
+(custom-set-faces
+  '(cperl-array-face ((t (:foreground "green" :weight bold))))
+  ;; '(cperl-hash-face ((t (:foreground "Red" :slant italic :weight bold))))
+  '(cperl-hash-face ((t (:foreground "orange red" :weight bold)))))
+
+(local-set-key (kbd "C-h f") 'cperl-perldoc)
 
 ;; (add-hook 'cperl-mode-hook 
 ;;           (lambda()
@@ -54,20 +76,8 @@
 
 ;;; flymake-perlcritic
 
-(setq cperl-indent-level 4)
-(setq cperl-continued-statement-offset 0)
-(setq cperl-extra-newline-before-brace nil)
-(setq cperl-indent-parens-as-block t)
-(setq cperl-electric-parens t)
-(setq cperl-electric-keywords t)
-
-(setq cperl-highlight-variables-indiscriminately t)
-; (set-face-background 'cperl-array-face "wheat")
-; (set-face-background 'cperl-hash-face "wheat")
-
 (add-to-list 'load-path "~/.emacs.d/packages/emacs-flymake-perlcritic")
 
-(local-set-key (kbd "C-h f") 'cperl-perldoc)
 ;; If flymake_perlcritic isn't found correctly, specify the full path
 (setq flymake-perlcritic-command
       "~/.emacs.d/packages/emacs-flymake-perlcritic/bin/flymake_perlcritic")
@@ -96,11 +106,6 @@
     '(ac-source-perl-completion)
   )
 )
-
-(custom-set-faces
-  '(cperl-array-face ((t (:foreground "green" :weight bold))))
-  ;; '(cperl-hash-face ((t (:foreground "Red" :slant italic :weight bold))))
-  '(cperl-hash-face ((t (:foreground "orange red" :weight bold)))))
 
 (setq cperl-electric-keywords nil)
 ;; (init-pde)
@@ -173,7 +178,6 @@
   (set-face-background 'dropdown-list-selection-face "grey")
 
   ;; ** Misc Config **
-
   ;; Run calls to perly_sense as a prepared shell command. Experimental
   ;; optimization, please try it out.
   (setq ps/use-prepare-shell-command t))
