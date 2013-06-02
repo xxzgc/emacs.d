@@ -138,6 +138,8 @@
 
   ;; *** PerlySense load (don't touch) ***
   ;; (setq ps/external-dir (shell-command-to-string "perly_sense external_dir"))
+  (setq ps/external-dir
+        "~/.emacs.d/packages/Devel-PerlySense/source/lib/Devel/PerlySense/external")
   ;; (if (string-match "Devel.PerlySense.external" ps/external-dir)
   ;;     (progn
   ;;       (message
@@ -156,7 +158,7 @@
 
   ;; hardcode external dir ;)
   (add-to-list 'load-path
-               "~/.emacs.d/packages/Devel-PerlySense/source/lib/Devel/PerlySense/external/emacs")
+               (expand-file-name (format "%s/%s" ps/external-dir "emacs")))
   (load "perly-sense")
 
   ;; ** Flymake Config **
