@@ -129,25 +129,27 @@
   (setq ps/load-flymake t)
   ;; Note: more flymake config below, after loading PerlySense
 
-
   ;; *** PerlySense load (don't touch) ***
-  (setq ps/external-dir (shell-command-to-string "perly_sense external_dir"))
-  (if (string-match "Devel.PerlySense.external" ps/external-dir)
-      (progn
-        (message
-         "PerlySense elisp files  at (%s) according to perly_sense, loading..."
-         ps/external-dir)
-        (setq load-path (cons
-                         (expand-file-name
-                          (format "%s/%s" ps/external-dir "emacs")
-                          ) load-path))
-        (load "perly-sense")
-        )
-    (message "Could not identify PerlySense install dir.
-  Is Devel::PerlySense installed properly?
-  Does 'perly_sense external_dir' give you a proper directory? (%s)" ps/external-dir)
-    )
+  ;; (setq ps/external-dir (shell-command-to-string "perly_sense external_dir"))
+  ;; (if (string-match "Devel.PerlySense.external" ps/external-dir)
+  ;;     (progn
+  ;;       (message
+  ;;        "PerlySense elisp files  at (%s) according to perly_sense, loading..."
+  ;;        ps/external-dir)
+  ;;       (setq load-path (cons
+  ;;                        (expand-file-name
+  ;;                         (format "%s/%s" ps/external-dir "emacs")
+  ;;                         ) load-path))
+  ;;       (load "perly-sense")
+  ;;       )
+  ;;   (message "Could not identify PerlySense install dir.
+  ;; Is Devel::PerlySense installed properly?
+  ;; Does 'perly_sense external_dir' give you a proper directory? (%s)" ps/external-dir)
+  ;;   )
 
+  ;; hardcode external dir ;)
+  (add-to-list 'load-path
+               "~/.emacs.d/packages/Devel-PerlySense/source/lib/Devel/PerlySense/external/emacs")
 
   ;; ** Flymake Config **
   ;; If you only want syntax check whenever you save, not continously
