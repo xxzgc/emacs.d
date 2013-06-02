@@ -54,6 +54,8 @@
 
 (require 'init-irc)
 
+(require 'init-flymake)
+
 (require 'init-ediff)
 
 (require 'init-git)
