@@ -14,6 +14,7 @@ ac-comphist.dat
 .org-id-locations
 abbrev_defs
 tramp
+flymake-tmp
 
 # temporary files
 #-----------------------
@@ -30,4 +31,3 @@ auto-save-list/*
 #-----------------------
 org-clock-save.el
 logs/*
-
