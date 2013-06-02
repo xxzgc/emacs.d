@@ -185,4 +185,7 @@
 
 (load "~/.emacs.d/perl/defuns.el")
 
+(init-pde)
+(init-perlysense)
+
 (provide 'init-perl)
