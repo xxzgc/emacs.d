@@ -78,19 +78,17 @@
 ;; ffap-perl-module
 (eval-after-load "ffap" '(require 'ffap-perl-module))
 
-;;; flymake-perlcritic
-
-(add-to-list 'load-path "~/.emacs.d/packages/emacs-flymake-perlcritic")
-
-;; If flymake_perlcritic isn't found correctly, specify the full path
-(setq flymake-perlcritic-command
-      "~/.emacs.d/packages/emacs-flymake-perlcritic/bin/flymake_perlcritic")
-;; Lets set it to be the most severe available.
-(setq flymake-perlcritic-severity 1)
-
-;; If you don't want to use the default ~/.perlcriticrc
-;; (setq flymake-perlcritic-profile "~/projects/big-project/perlcriticrc")
-(require 'flymake-perlcritic)
+(eval-after-load "init-flymake" '(lambda()
+  ;;; flymake-perlcritic
+  (add-to-list 'load-path "~/.emacs.d/packages/emacs-flymake-perlcritic")
+  ;; If flymake_perlcritic isn't found correctly, specify the full path
+  (setq flymake-perlcritic-command
+        "~/.emacs.d/packages/emacs-flymake-perlcritic/bin/flymake_perlcritic")
+  ;; Lets set it to be the most severe available.
+  (setq flymake-perlcritic-severity 1)
+  ;; If you don't want to use the default ~/.perlcriticrc
+  ;; (setq flymake-perlcritic-profile "~/projects/big-project/perlcriticrc")
+  (require 'flymake-perlcritic)))
 
 ;; man completion
 (eval-after-load "man" '(require 'man-completion))
