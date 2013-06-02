@@ -103,6 +103,7 @@
 ;; (init-pde)
 ;; (init-perlysence)
 
+;; cd ~/.emacs.d/packages/emacs-pde/; perl Makefile.PL && make && make install
 (defun init-pde ()
   (interactive)
   ;; PDE
