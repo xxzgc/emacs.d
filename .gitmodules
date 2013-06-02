@@ -119,3 +119,6 @@
 [submodule "packages/emacs-flymake-perlcritic"]
 	path = packages/emacs-flymake-perlcritic
 	url = git://github.com/illusori/emacs-flymake-perlcritic.git
+[submodule "packages/popup"]
+	path = packages/popup
+	url = git://github.com/auto-complete/popup-el.git
