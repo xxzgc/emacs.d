@@ -122,7 +122,7 @@
   ;; Flymake must be installed.
   ;; It is included in Emacs 22
   ;;     (or http://flymake.sourceforge.net/, put flymake.el in your load-path)
-  ;; (setq ps/load-flymake t)
+  (setq ps/load-flymake t)
   ;; Note: more flymake config below, after loading PerlySense
 
 
