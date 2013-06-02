@@ -6,7 +6,7 @@
 
 (require 'flymake)
 
-(setq flymake-max-parallel-syntax-checks 8)
+(setq flymake-max-parallel-syntax-checks 1)
 
 (setq flymake-log-level 3)
 
@@ -21,6 +21,14 @@
 
 ;; This lets me say where my temp dir is.
 (setq temporary-file-directory "~/.emacs.d/flymake-tmp/")
+
+;; Don't start syntax check on find file
+(setq flymake-start-syntax-check-on-find-file nil)
+
+;; Don't start syntax check if newline char was added/removed from the buffer
+(setq flymake-start-syntax-check-on-newline nil)
+
+(setq flymake-no-changes-timeout 9999)
 
 ;; faces
 
