@@ -12,8 +12,7 @@
 
 (require 'erc-match)
 (erc-match-mode t)
-(setq erc-keywords '("taras" "iagniuk" "taryk"
-                     "comcure" "lviv" "ukraine"
+(setq erc-keywords '("taras" "iagniuk" "comcure" "lviv" "ukraine"
                      "emacs")) ;; yeah, I want to know who mention emacs
 
 (defmacro asf-erc-bouncer-connect (command server port nick ssl pass)
