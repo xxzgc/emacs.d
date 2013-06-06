@@ -17,17 +17,6 @@
 (require 'cperl-mode)
 (defalias 'perl-mode 'cperl-mode)
 
-(setq cperl-indent-level 4)
-(setq cperl-continued-statement-offset 0)
-(setq cperl-extra-newline-before-brace nil)
-(setq cperl-indent-parens-as-block t)
-(setq cperl-electric-parens t)
-
-;; DON'T ENABLE `electric-keywords`!!!
-(setq cperl-electric-keywords nil)
-
-
-(setq cperl-highlight-variables-indiscriminately t)
 ; (set-face-background 'cperl-array-face "wheat")
 ; (set-face-background 'cperl-hash-face "wheat")
 
@@ -187,5 +176,17 @@
 
 (init-pde)
 (init-perlysense)
+
+(setq cperl-auto-newline nil)
+(setq cperl-auto-newline-after-colon nil)
+(setq cperl-continued-statement-offset 0)
+(setq cperl-electric-keywords nil) ;; DON'T ENABLE `electric-keywords`!!!
+(setq cperl-electric-linefeed t)
+(setq cperl-electric-parens t)
+(setq cperl-extra-newline-before-brace nil)
+(setq cperl-highlight-variables-indiscriminately t)
+(setq cperl-indent-level 4)
+(setq cperl-indent-parens-as-block t)
+(setq cperl-regexp-scan nil)
 
 (provide 'init-perl)
