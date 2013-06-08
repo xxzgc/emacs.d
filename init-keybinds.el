@@ -131,6 +131,8 @@
 ;;
 (define-key ac-mode-map (kbd "M-RET") 'auto-complete)
 
+(global-set-key (kbd "C-x C-e") 'eval-and-replace)
+
 ;;
 ;; kill line or region
 ;;
