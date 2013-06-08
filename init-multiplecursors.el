@@ -15,7 +15,7 @@
 (global-set-key (kbd "C-C C-a") 'mc/edit-beginnings-of-lines)
 
 ;; Rectangular region mode
-(global-set-key (kbd "H-SPC") 'set-rectangular-region-anchor)
+(global-set-key (kbd "M-SPC") 'set-rectangular-region-anchor)
 
 ;; Mark more like This
 (global-set-key (kbd "M-æ") 'mc/mark-all-like-this)
