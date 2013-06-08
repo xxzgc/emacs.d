@@ -72,6 +72,8 @@
 
 (require 'init-cmake)
 
+(require 'init-paredit)
+
 (require 'init-project)
 
 ;; (require 'init-mmm)

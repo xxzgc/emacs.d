@@ -122,3 +122,6 @@
 [submodule "packages/popup"]
 	path = packages/popup
 	url = git://github.com/auto-complete/popup-el.git
+[submodule "packages/paredit"]
+	path = packages/paredit
+	url = git://github.com/emacsmirror/paredit.git
