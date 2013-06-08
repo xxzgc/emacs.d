@@ -42,7 +42,7 @@
 
 (require 'init-iedit)
 
-;; (require 'init-multiplecursors)
+(require 'init-multiplecursors)
 
 (require 'init-w3m)
 
