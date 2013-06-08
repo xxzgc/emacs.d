@@ -177,16 +177,16 @@
 (init-pde)
 (init-perlysense)
 
-(setq cperl-auto-newline nil)
-(setq cperl-auto-newline-after-colon nil)
-(setq cperl-continued-statement-offset 0)
-(setq cperl-electric-keywords nil) ;; DON'T ENABLE `electric-keywords`!!!
-(setq cperl-electric-linefeed t)
-(setq cperl-electric-parens t)
-(setq cperl-extra-newline-before-brace nil)
-(setq cperl-highlight-variables-indiscriminately t)
-(setq cperl-indent-level 4)
-(setq cperl-indent-parens-as-block t)
-(setq cperl-regexp-scan nil)
+(setq cperl-auto-newline nil
+      cperl-auto-newline-after-colon nil
+      cperl-continued-statement-offset 0
+      cperl-electric-keywords nil ;; DON'T ENABLE `electric-keywords`!!!
+      cperl-electric-linefeed t
+      cperl-electric-parens t
+      cperl-extra-newline-before-brace nil
+      cperl-highlight-variables-indiscriminately t
+      cperl-indent-level 4
+      cperl-indent-parens-as-block t
+      cperl-regexp-scan nil)
 
 (provide 'init-perl)
