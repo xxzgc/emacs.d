@@ -115,3 +115,19 @@
 
 ;; C-x C-n
 (put 'set-goal-column 'disabled nil)
+
+;;; {{
+;; highlight parentheses
+(show-paren-mode 1)
+
+;; to deactivate a small delay before showing a matching parenthesis
+(setq show-paren-delay 0)
+
+;; (set-face-background 'show-paren-match-face (face-background 'default))
+(set-face-foreground 'show-paren-match-face (face-foreground 'default))
+(set-face-background 'show-paren-match-face "#424242")
+;; (set-face-foreground 'show-paren-match-face "#666666")
+;; (set-face-attribute 'show-paren-match-face nil :weight 'extra-bold :underline t)
+(set-face-attribute 'show-paren-match-face nil :weight 'normal :underline t)
+
+;;; }}
