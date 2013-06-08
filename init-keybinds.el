@@ -32,11 +32,6 @@
 (global-set-key [C-c C-r] 'rename-current-file-or-buffer)
 
 ;;
-;; Smart beginning of line
-;;
-(global-set-key [home] 'smart-beginning-of-line)
-
-;;
 ;; tabbar
 ;;
 ;; C-S-<tab> ;; C-S-<win>-<tab>
@@ -106,10 +101,12 @@
 ;; (define-key function-key-map "\033[4~" [end])
 ;; (global-set-key [end] 'end-of-line) 
 
-(define-key global-map [home] 'beginning-of-line)
-(define-key global-map [end]  'end-of-line)
+;; (define-key global-map [home] 'beginning-of-line)
+(global-set-key [home] 'smart-beginning-of-line) ;; Smart beginning of line
+(define-key global-map [end] 'end-of-line)
 
-(define-key global-map [kp-home] 'beginning-of-line)
+;; (define-key global-map [kp-home] 'beginning-of-line)
+(define-key global-map [kp-home] 'smart-beginning-of-line) ;; Smart beginning of line
 (define-key global-map [kp-end]  'end-of-line)
 
 ;; (define-key global-map [C-down]  'scroll-up)
