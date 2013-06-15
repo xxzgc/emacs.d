@@ -137,3 +137,9 @@
 [submodule "packages/emacs-ctable"]
 	path = packages/emacs-ctable
 	url = git://github.com/kiwanami/emacs-ctable.git
+[submodule "packages/emacs-window-manager"]
+	path = packages/emacs-window-manager
+	url = git://github.com/kiwanami/emacs-window-manager.git
+[submodule "packages/emacs-window-layout"]
+	path = packages/emacs-window-layout
+	url = git://github.com/kiwanami/emacs-window-layout.git

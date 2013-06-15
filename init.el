@@ -36,6 +36,8 @@
 ;; (require 'init-workspaces)
 (require 'init-perspective)
 
+(require 'init-wm)
+
 (require 'init-linum)
 
 (require 'init-cua)
