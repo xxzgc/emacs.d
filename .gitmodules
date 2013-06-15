@@ -125,3 +125,15 @@
 [submodule "packages/paredit"]
 	path = packages/paredit
 	url = git://github.com/emacsmirror/paredit.git
+[submodule "packages/emacs-edbi"]
+	path = packages/emacs-edbi
+	url = git://github.com/kiwanami/emacs-edbi.git
+[submodule "packages/emacs-deferred"]
+	path = packages/emacs-deferred
+	url = git://github.com/kiwanami/emacs-deferred.git
+[submodule "packages/emacs-epc"]
+	path = packages/emacs-epc
+	url = git://github.com/kiwanami/emacs-epc.git
+[submodule "packages/emacs-ctable"]
+	path = packages/emacs-ctable
+	url = git://github.com/kiwanami/emacs-ctable.git

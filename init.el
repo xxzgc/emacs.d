@@ -19,6 +19,8 @@
 
 (load-file "~/.emacs.d/custom.el")
 
+(require 'init-libraries)
+
 (require 'init-general-defuns)
 
 (require 'init-elpa)
@@ -75,6 +77,8 @@
 (require 'init-paredit)
 
 (require 'init-project)
+
+(require 'init-db)
 
 ;; (require 'init-mmm)
 
