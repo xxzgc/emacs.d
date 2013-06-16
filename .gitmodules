@@ -143,3 +143,6 @@
 [submodule "packages/emacs-window-layout"]
 	path = packages/emacs-window-layout
 	url = git://github.com/kiwanami/emacs-window-layout.git
+[submodule "packages/highlight-symbol"]
+	path = packages/highlight-symbol
+	url = git://github.com/nschum/highlight-symbol.el.git
