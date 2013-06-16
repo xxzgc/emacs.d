@@ -63,7 +63,7 @@
 (windmove-default-keybindings 'meta)
 
 (global-set-key [f2] 'undo)
-(global-set-key [f3] 'repeat-complex-command)
+;; (global-set-key [f3] 'repeat-complex-command)
 (global-set-key [f4] 'replace-string)
 (global-set-key [f5] 'query-replace)
 
