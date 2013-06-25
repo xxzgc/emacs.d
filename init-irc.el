@@ -6,9 +6,17 @@
  '(erc-log-channels-directory "~/.emacs-irc-log")
  '(erc-save-buffer-on-part t)
  '(erc-log-insert-log-on-open nil)
+ '(erc-enable-logging (quote erc-log-all-but-server-buffers))
+ '(erc-modules (quote (stamp log)))
  '(erc-log-mode t)
+ '(erc-timestamp-mode 1) ;; timestamp the conversations
  '(erc-log-write-after-send t)
- '(erc-log-write-after-insert t))
+ '(erc-log-write-after-insert t)
+ '(erc-timestamp-only-if-changed-flag nil)
+ '(erc-timestamp-format "[%H:%M:%S] ")
+ '(erc-fill-prefix      "           ")
+ '(erc-insert-timestamp-function 'erc-insert-timestamp-left)
+ '(erc-hide-timestamps nil))
 
 (require 'erc-match)
 (erc-match-mode t)
@@ -37,9 +45,6 @@
    :urgency 'critical))
 
 (add-hook 'erc-text-matched-hook 'erc-global-notify)
-
-;; timestamp the conversations
-(erc-timestamp-mode 1)
 
 ;; (asf-erc-bouncer-connect erc-freenode "irc.freenode.net" 6667 "newbie" nil "pass1")
 ;; ssl connecion:
