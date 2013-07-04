@@ -216,6 +216,14 @@
 
 (require 'init-keybinds)
 
+;;
+;; Work stuff
+;;
+(let ((work-stuff-el "~/.emacs.d/work-stuff.el"))
+  (when (file-exists-p work-stuff-el)
+    (load-file work-stuff-el)
+    (require 'work-stuff)))
+
 ;;----------------------------------------------------------------------------
 ;; Allow access from emacsclient
 ;;----------------------------------------------------------------------------
