@@ -31,3 +31,7 @@ auto-save-list/*
 #-----------------------
 org-clock-save.el
 logs/*
+
+# work-stuff
+#-----------------------
+work-stuff.el
