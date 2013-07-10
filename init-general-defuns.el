@@ -380,4 +380,8 @@ The possible chars are 0 to 9, and a to z (lower case)."
     (dotimes (ii 5)
       (insert (elt myCharset (random possibleCharsCount))) ) ) )
 
+(defun go-to-column (column)
+  (interactive "nColumn: ")
+  (move-to-column column t))
+
 (provide 'init-general-defuns)

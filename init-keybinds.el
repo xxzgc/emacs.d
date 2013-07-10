@@ -86,7 +86,13 @@
 
 (global-set-key [delete] 'delete-char)
 
+;; Go to line
+;; note: default keybind is M-g M-g or M-g g
 (global-set-key "\C-l" 'goto-line)
+
+;; Go to column
+(global-set-key (kbd "M-g M-c") 'go-to-column)
+
 
 ;; (global-set-key [M-home] 'beginning-of-buffer)
 ;; (global-set-key [C-home] 'beginning-of-buffer)
