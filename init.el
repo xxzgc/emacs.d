@@ -93,6 +93,7 @@
 (def-custom-package
   :package-name 'geiser
   :mode '((scheme-mode "\\.scm$" "\\.ss$" "\\.rkt$"))
+  :minor-modes '(rainbow-delimiters-mode paredit-mode)
   :line-numbers t
   :init-package t)
 
@@ -106,6 +107,7 @@
 (def-custom-package
   :package-name 'common-lisp
   :mode '((common-lisp-mode "\\.clisp$" "\\.lisp$"))
+  :minor-modes '(rainbow-delimiters-mode paredit-mode)
   :line-numbers t
   :init-package t)
 
@@ -163,6 +165,7 @@
 (def-custom-package
   :package-name 'elisp
   :mode '((emacs-lisp-mode "\\.el$"))
+  :minor-modes '(rainbow-delimiters-mode paredit-mode)
   :line-numbers t
   :init-package t)
 
@@ -178,6 +181,7 @@
 (def-custom-package
   :package-name 'clojure
   :mode '((clojure-mode "\\.clj$"))
+  :minor-modes '(rainbow-delimiters-mode)
   :line-numbers t
   :init-package t)
 
