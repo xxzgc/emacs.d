@@ -81,7 +81,10 @@
 (require 'init-project)
 
 (require 'init-db)
+
 (require 'init-highlight)
+
+(require 'init-rainbow-delimiters)
 
 
 ;; (require 'init-mmm)
