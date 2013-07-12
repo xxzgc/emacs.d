@@ -130,4 +130,7 @@
 ;; (set-face-attribute 'show-paren-match-face nil :weight 'extra-bold :underline t)
 (set-face-attribute 'show-paren-match-face nil :weight 'normal :underline t)
 
+(require 'whitespace)
+(setq whitespace-line-column 79 ;; limit line length
+      whitespace-style '(face lines-tail empty spaces tabs newline space-mark tab-mark newline-mark))
 ;;; }}
