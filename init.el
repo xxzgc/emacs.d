@@ -19,75 +19,145 @@
 
 (load-file "~/.emacs.d/custom.el")
 
-(require 'init-libraries)
+(def-custom-package
+  :package-name 'libraries
+  :init-package t)
 
-(require 'init-general-defuns)
+(def-custom-package
+  :package-name 'general-defuns
+  :init-package t)
 
-(require 'init-elpa)
+(def-custom-package
+  :package-name 'elpa
+  :init-package t)
 
-(require 'init-session)
+(def-custom-package
+  :package-name 'session
+  :init-package t)
 
-(require 'init-vline)
+(def-custom-package
+  :package-name 'vline
+  :init-package t)
 
-(require 'init-window-number)
+(def-custom-package
+  :package-name 'window-number
+  :init-package t)
 
-(require 'init-nyan)
+(def-custom-package
+  :package-name 'nyan
+  :init-package t)
 
-;; (require 'init-workspaces)
-(require 'init-perspective)
+;; (def-custom-package
+;;  :package-name 'workspaces
+;;  :init-package t)
 
-;; (require 'init-wm)
+(def-custom-package
+  :package-name 'perspective
+  :init-package t)
 
-(require 'init-linum)
+;; (def-custom-package
+;;  :package-name 'wm
+;;  :init-package t)
 
-(require 'init-cua)
+(def-custom-package
+  :package-name 'linum
+  :init-package t)
 
-(require 'init-minimap)
+(def-custom-package
+  :package-name 'cua
+  :init-package t)
 
-(require 'init-iedit)
+(def-custom-package
+  :package-name 'minimap
+  :init-package t)
 
-(require 'init-multiplecursors)
+(def-custom-package
+  :package-name 'iedit
+  :init-package t)
 
-(require 'init-w3m)
+(def-custom-package
+  :package-name 'multiplecursors
+  :init-package t)
 
-(require 'init-multiterm)
+(def-custom-package
+  :package-name 'w3m
+  :init-package t)
 
-(require 'init-twitter)
+(def-custom-package
+  :package-name 'multiterm
+  :init-package t)
 
-(require 'init-jira)
+(def-custom-package
+  :package-name 'twitter
+  :init-package t)
 
-(require 'init-irc)
+(def-custom-package
+  :package-name 'jira
+  :init-package t)
 
-(require 'init-autocomplete)
+(def-custom-package
+  :package-name 'irc
+  :init-package t)
 
-(require 'init-yasnippet)
+(def-custom-package
+  :package-name 'autocomplete
+  :init-package t)
 
-(require 'init-flymake)
+(def-custom-package
+  :package-name 'yasnippet
+  :init-package t)
 
-(require 'init-ediff)
+(def-custom-package
+  :package-name 'flymake
+  :init-package t)
 
-(require 'init-git)
+(def-custom-package
+  :package-name 'ediff
+  :init-package t)
 
-(require 'init-mercurial)
+(def-custom-package
+  :package-name 'git
+  :init-package t)
 
-(require 'init-package)
+(def-custom-package
+  :package-name 'mercurial
+  :init-package t)
 
-(require 'init-cc)
+(def-custom-package
+  :package-name 'package
+  :init-package t)
 
-(require 'init-cmake)
+(def-custom-package
+  :package-name 'cc
+  :init-package t)
 
-(require 'init-paredit)
+(def-custom-package
+  :package-name 'cmake
+  :init-package t)
 
-(require 'init-project)
+(def-custom-package
+  :package-name 'paredit
+  :init-package t)
 
-(require 'init-db)
+(def-custom-package
+  :package-name 'project
+  :init-package t)
 
-(require 'init-highlight)
+(def-custom-package
+  :package-name 'db
+  :init-package t)
 
-(require 'init-rainbow-delimiters)
+(def-custom-package
+  :package-name 'highlight
+  :init-package t)
 
+(def-custom-package
+  :package-name 'rainbow-delimiters
+  :init-package t)
 
-;; (require 'init-mmm)
+(def-custom-package
+  :package-name 'mmm
+  :init-package t)
 
 ;; Geiser package together with scheme-mode
 (def-custom-package
@@ -103,7 +173,6 @@
   :line-numbers t
   :init-package t)
 
-;; (require 'init-common-lisp)
 (def-custom-package
   :package-name 'common-lisp
   :mode '((common-lisp-mode "\\.clisp$" "\\.lisp$"))
@@ -111,7 +180,6 @@
   :line-numbers t
   :init-package t)
 
-;; (require 'init-perl)
 (def-custom-package
   :package-name 'perl
   :mode '((cperl-mode "\\.pl$" "\\.pm$" "\\.PL$" "\\.t$" "\\.cgi$")
@@ -120,48 +188,50 @@
   :line-numbers t
   :init-package t)
 
-;; (require 'init-ruby)
 (def-custom-package
   :package-name 'ruby
   :mode '((ruby-mode "\\.rb$" "\\.rsel$" "\\.rhtml$" "\\.erb$" "\\.prawn$" "Rakefile$" "Gemfile$"))
   :line-numbers t
   :init-package t)
 
-;; (require 'init-php)
 (def-custom-package
   :package-name 'php
   :mode '((php-mode "\\.php$"))
   :line-numbers t
   :init-package t)
 
-;; (require 'init-lua)
 (def-custom-package
   :package-name 'lua
   :mode '((lua-mode "\\.lua$"))
   :line-numbers t
   :init-package t)
 
-(require 'init-org)
+(def-custom-package
+  :package-name 'org
+  :init-package t)
 
-(require 'init-sqlite)
+(def-custom-package
+  :package-name 'sqlite
+  :init-package t)
 
-;; (require 'init-js)
 (def-custom-package
   :package-name 'js
   :mode '((js2-mode "\\.js$" "\\.json$"))
   :line-numbers t
   :init-package t)
 
-;; (require 'init-yaml)
 (def-custom-package
   :package-name 'yaml
   :mode '((yaml-mode "\\.yaml$"))
   :line-numbers t
   :init-package t)
 
-;; (require 'init-python)
+;; (def-custom-package
+;;   :package-name 'python
+;;   :mode '((python-mode "\\.py$"))
+;;   :line-numbers t
+;;   :init-package t)
 
-;; (require 'init-elisp)
 (def-custom-package
   :package-name 'elisp
   :mode '((emacs-lisp-mode "\\.el$"))
@@ -169,15 +239,22 @@
   :line-numbers t
   :init-package t)
 
-(require 'init-ecb)
+(def-custom-package
+  :package-name 'ecb
+  :init-package t)
 
-;; (require 'init-cedet)
+;; (def-custom-package
+;;  :package-name 'cedet
+;;  :init-package t)
 
-(require 'init-modeline)
+(def-custom-package
+  :package-name 'modeline
+  :init-package t)
 
-(require 'init-heroku)
+;; (def-custom-package
+;;   :package-name 'heroku
+;;   :init-package t)
 
-;; (require 'init-clojure)
 (def-custom-package
   :package-name 'clojure
   :mode '((clojure-mode "\\.clj$"))
@@ -185,14 +262,12 @@
   :line-numbers t
   :init-package t)
 
-;; (require 'init-haskell)
 ;; (def-custom-package
 ;;   :package-name 'haskell
 ;;   :mode '((haskell-mode "\\.hs$"))
 ;;   :line-numbers t
 ;;   :init-package t)
 
-;; (require 'init-shell-script)
 (def-custom-package
   :package-name 'shell-script
   :mode '((shell-script-mode "\\.sh$" "\\.bash$" "\\.zsh$" "^.zshrc$" "^.bashrc$"))
@@ -217,11 +292,17 @@
   :line-numbers t
   :init-package t)
 
-;; (require 'init-nxhtml)
+;; (def-custom-package
+;;  :package-name 'nxhtml
+;;  :init-package t)
 
-(require 'init-profile)
+(def-custom-package
+  :package-name 'profile
+  :init-package t)
 
-(require 'init-keybinds)
+(def-custom-package
+  :package-name 'keybinds
+  :init-package t)
 
 ;;
 ;; Work stuff
