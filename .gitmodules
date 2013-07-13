@@ -149,3 +149,6 @@
 [submodule "packages/rainbow-delimiters"]
 	path = packages/rainbow-delimiters
 	url = git@github.com:jlr/rainbow-delimiters.git
+[submodule "packages/twittering-mode"]
+	path = packages/twittering-mode
+	url = git@github.com:hayamiz/twittering-mode.git
