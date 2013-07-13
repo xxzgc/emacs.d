@@ -19,6 +19,8 @@
 
 (load-file "~/.emacs.d/custom.el")
 
+(require 'init-package)
+
 (def-custom-package
   :package-name 'libraries
   :init-package t)
@@ -121,10 +123,6 @@
 
 (def-custom-package
   :package-name 'mercurial
-  :init-package t)
-
-(def-custom-package
-  :package-name 'package
   :init-package t)
 
 (def-custom-package
