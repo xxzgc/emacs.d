@@ -317,6 +317,11 @@
 (unless (server-running-p)
   (server-start))
 
+(message "Emacs loaded in %ds"
+         (destructuring-bind
+             (hi lo ms unknown) (current-time)
+           (- (+ hi lo) (+ (first emacs-start-time) (second emacs-start-time)))))
+
 ;; # Local Variables:
 ;; # tab-width: 2
 ;; # cperl-indent-level: 2
