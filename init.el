@@ -177,10 +177,6 @@
 
 (use-custom-package
   :package-name 'rainbow-delimiters
-  :init-package t)
-
-(use-custom-package
-  :package-name 'mmm
   :add-path "~/.emacs.d/packages/rainbow-delimiters"
   :init-package t)
 
