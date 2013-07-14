@@ -1,4 +1,9 @@
-(defun* use-custom-package (&key package-name mode minor-modes line-numbers init-package)
+(defun* use-custom-package (&key add-path package-name mode minor-modes defer line-numbers init-package)
+  (if add-path
+      (if (listp add-path)
+          (dolist (path-item add-path)
+            (add-to-list 'load-path path-item))
+        (add-to-list 'load-path add-path)))
   (dolist (item mode)
     (mapcar
       (lambda (filename-pattern)
