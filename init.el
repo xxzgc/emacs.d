@@ -254,7 +254,7 @@
 
 (use-custom-package
   :package-name 'yaml
-  :mode '((yaml-mode "\\.yaml$"))
+  :mode '((yaml-mode "\\.yaml$" "\\.yml$"))
   :line-numbers t
   :init-package t)
 
