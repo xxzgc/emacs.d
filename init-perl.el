@@ -14,8 +14,8 @@
 
 ;; cperl-mode --
 ;; (add-to-list 'load-path "~/.emacs.d/packages/cperl-mode")
-(require 'cperl-mode)
-(defalias 'perl-mode 'cperl-mode)
+;; (require 'cperl-mode)
+;; (defalias 'perl-mode 'cperl-mode)
 
 ; (set-face-background 'cperl-array-face "wheat")
 ; (set-face-background 'cperl-hash-face "wheat")
@@ -35,12 +35,12 @@
              (yas/minor-mode-on)))
 
 ;; xs-mode
-(require 'xs-mode)
+;; (require 'xs-mode)
 (autoload 'xs-mode "xs-mode" "Major mode for XS files" t)
 
 ;; Template Toolkit mode
 ;; (setq load-path (cons "~/.emacs.d/packages/tt-mode" load-path))
-(require 'tt-mode)
+;; (require 'tt-mode)
 
 ;; SEPIA -  Simple Emacs-Perl Interface
 ;; (setq load-path (cons "~/.emacs.d/packages/sepia" load-path))
@@ -60,7 +60,6 @@
         (when (string-match "export\\s-PERLBREW\_PERL\=\"\\(.+\\)\"" 
                             file-content)
            (match-string-no-properties 1 file-content)))))
-
 
 (perlbrew-mini-use (perlbrew-detect))
 
