@@ -1,6 +1,6 @@
 ;; {{
 ;; twittering-mode ( https://github.com/hayamiz/twittering-mode )
-(add-to-list 'load-path "~/.emacs.d/packages/twittering-mode")
+;; (add-to-list 'load-path "~/.emacs.d/packages/twittering-mode")
 (require 'twittering-mode)
 
 ;; (Optional) To avoid having to authorize twittering-mode everytime you run it

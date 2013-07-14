@@ -4,7 +4,7 @@
 ;; (require 'xml-rpc)
 ;; (require 'jira)
 ;;; jira via soap
-(setq load-path (cons "~/.emacs.d/packages/emacs-soap-client" load-path))
+;; (setq load-path (cons "~/.emacs.d/packages/emacs-soap-client" load-path))
 (require 'soap-client)
 (require 'jira2)
 

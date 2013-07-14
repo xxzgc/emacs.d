@@ -1,4 +1,4 @@
-(add-to-list 'load-path "~/.emacs.d/packages/emacs-edbi")
+;; (add-to-list 'load-path "~/.emacs.d/packages/emacs-edbi")
 
 (require 'edbi)
 

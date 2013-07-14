@@ -1,6 +1,6 @@
 ;; {{
 ;; yasnippet
-(add-to-list 'load-path "~/.emacs.d/packages/yasnippet")
+;; (add-to-list 'load-path "~/.emacs.d/packages/yasnippet")
 (require 'yasnippet) ;; not yasnippet-bundle
 
 (setq yas-snippet-dirs

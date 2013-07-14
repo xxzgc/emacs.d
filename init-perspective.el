@@ -1,4 +1,4 @@
-(add-to-list 'load-path "~/.emacs.d/packages/perspective")
+;; (add-to-list 'load-path "~/.emacs.d/packages/perspective")
 ;; Load Perspective
 (require 'perspective)
 ;; Toggle the perspective mode

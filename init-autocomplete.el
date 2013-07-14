@@ -1,9 +1,9 @@
 ;; {{
 ;; auto completion mode
-(add-to-list 'load-path "~/.emacs.d/packages/popup/")
+;; (add-to-list 'load-path "~/.emacs.d/packages/popup/")
 (require 'popup)
 
-(add-to-list 'load-path "~/.emacs.d/packages/auto-complete/")
+;; (add-to-list 'load-path "~/.emacs.d/packages/auto-complete/")
 
 (require 'auto-complete)
 (require 'auto-complete-config)

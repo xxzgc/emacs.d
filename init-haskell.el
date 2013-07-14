@@ -1,4 +1,4 @@
-(add-to-list 'load-path "~/.emacs.d/packages/haskell-mode")
+;; (add-to-list 'load-path "~/.emacs.d/packages/haskell-mode")
 (load "~/.emacs.d/packages/haskell-mode/haskell-site-file.el")
 
 ;; (add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)

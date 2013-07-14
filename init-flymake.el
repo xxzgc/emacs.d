@@ -2,7 +2,7 @@
 ;;; FlyMake
 
 ;; Let's run 8 checks at once instead.
-(add-to-list 'load-path "~/.emacs.d/packages/emacs-flymake")
+;; (add-to-list 'load-path "~/.emacs.d/packages/emacs-flymake")
 
 (require 'flymake)
 

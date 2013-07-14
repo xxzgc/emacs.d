@@ -13,7 +13,7 @@
 (defvar init-perl-module)
 
 ;; cperl-mode --
-(add-to-list 'load-path "~/.emacs.d/packages/cperl-mode")
+;; (add-to-list 'load-path "~/.emacs.d/packages/cperl-mode")
 (require 'cperl-mode)
 (defalias 'perl-mode 'cperl-mode)
 
@@ -39,11 +39,11 @@
 (autoload 'xs-mode "xs-mode" "Major mode for XS files" t)
 
 ;; Template Toolkit mode
-(setq load-path (cons "~/.emacs.d/packages/tt-mode" load-path))
+;; (setq load-path (cons "~/.emacs.d/packages/tt-mode" load-path))
 (require 'tt-mode)
 
 ;; SEPIA -  Simple Emacs-Perl Interface
-(setq load-path (cons "~/.emacs.d/packages/sepia" load-path))
+;; (setq load-path (cons "~/.emacs.d/packages/sepia" load-path))
 (require 'sepia)
 
 ;; perlbrew-mini
@@ -69,7 +69,7 @@
 
 (eval-after-load "init-flymake" '(lambda()
   ;;; flymake-perlcritic
-  (add-to-list 'load-path "~/.emacs.d/packages/emacs-flymake-perlcritic")
+  ;; (add-to-list 'load-path "~/.emacs.d/packages/emacs-flymake-perlcritic")
   ;; If flymake_perlcritic isn't found correctly, specify the full path
   (setq flymake-perlcritic-command
         "~/.emacs.d/packages/emacs-flymake-perlcritic/bin/flymake_perlcritic")
@@ -100,7 +100,7 @@
 (defun init-pde ()
   (interactive)
   ;; PDE
-  (add-to-list 'load-path "~/.emacs.d/packages/emacs-pde/lisp/")
+  ;; (add-to-list 'load-path "~/.emacs.d/packages/emacs-pde/lisp/")
   (load "pde-load"))
 
 (defun init-perlysense ()

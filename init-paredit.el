@@ -1,7 +1,7 @@
 ;; {{
 ;; init-paredit.el
 
-(add-to-list 'load-path "~/.emacs.d/packages/paredit")
+;; (add-to-list 'load-path "~/.emacs.d/packages/paredit")
 
 ;; (autoload 'enable-paredit-mode "paredit"
 ;;   "Turn on pseudo-structural editing of Lisp code." t)

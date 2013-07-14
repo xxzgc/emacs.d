@@ -1,4 +1,4 @@
-(add-to-list 'load-path "~/.emacs.d/packages/mmm-mode")
+;; (add-to-list 'load-path "~/.emacs.d/packages/mmm-mode")
 
 (require 'mmm-mode)
 (require 'mmm-auto)

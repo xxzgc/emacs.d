@@ -1,4 +1,4 @@
-(add-to-list 'load-path "~/.emacs.d/packages/highlight-symbol/")
+;; (add-to-list 'load-path "~/.emacs.d/packages/highlight-symbol/")
 
 (require 'highlight-symbol)
 (global-set-key [(control f3)] 'highlight-symbol-at-point)

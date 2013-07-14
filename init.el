@@ -23,6 +23,9 @@
 
 (use-custom-package
   :package-name 'libraries
+  :add-path '("~/.emacs.d/packages/emacs-deferred"
+              "~/.emacs.d/packages/emacs-epc"
+              "~/.emacs.d/packages/emacs-ctable")
   :init-package t)
 
 (use-custom-package
@@ -47,6 +50,7 @@
 
 (use-custom-package
   :package-name 'nyan
+  :add-path "~/.emacs.d/packages/nyan-mode"
   :init-package t)
 
 ;; (use-custom-package
@@ -54,11 +58,14 @@
 ;;  :init-package t)
 
 (use-custom-package
+  :add-path "~/.emacs.d/packages/perspective"
   :package-name 'perspective
   :init-package t)
 
 ;; (use-custom-package
 ;;  :package-name 'wm
+;;  :add-path '("~/.emacs.d/packages/emacs-window-layout"
+;;              "~/.emacs.d/packages/emacs-window-manager")
 ;;  :init-package t)
 
 (use-custom-package
@@ -75,14 +82,18 @@
 
 (use-custom-package
   :package-name 'iedit
+  :add-path "~/.emacs.d/packages/emacs-iedit"
   :init-package t)
 
 (use-custom-package
   :package-name 'multiplecursors
+  :add-path '("~/.emacs.d/packages/multiple-cursors.el/"
+              "~/.emacs.d/packages/mark-multiple/")
   :init-package t)
 
 (use-custom-package
   :package-name 'w3m
+  :add-path "~/.emacs.d/packages/emacs-w3m"
   :init-package t)
 
 (use-custom-package
@@ -91,10 +102,12 @@
 
 (use-custom-package
   :package-name 'twitter
+  :add-path "~/.emacs.d/packages/twittering-mode"
   :init-package t)
 
 (use-custom-package
   :package-name 'jira
+  :add-path "~/.emacs.d/packages/emacs-soap-client"
   :init-package t)
 
 (use-custom-package
@@ -103,14 +116,18 @@
 
 (use-custom-package
   :package-name 'autocomplete
+  :add-path '("~/.emacs.d/packages/popup/"
+              "~/.emacs.d/packages/auto-complete/")
   :init-package t)
 
 (use-custom-package
   :package-name 'yasnippet
+  :add-path "~/.emacs.d/packages/yasnippet"
   :init-package t)
 
 (use-custom-package
   :package-name 'flymake
+  :add-path "~/.emacs.d/packages/emacs-flymake"
   :init-package t)
 
 (use-custom-package
@@ -119,34 +136,43 @@
 
 (use-custom-package
   :package-name 'git
+  :add-path '("~/.emacs.d/packages/egg"
+              "~/.emacs.d/packages/egit")
   :init-package t)
 
 (use-custom-package
   :package-name 'mercurial
+  :add-path "~/.emacs.d/packages/ahg"
   :init-package t)
 
 (use-custom-package
   :package-name 'cc
+  :add-path "~/.emacs.d/packages/cc-mode"
   :init-package t)
 
 (use-custom-package
   :package-name 'cmake
+  :mode '((cmake-mode "^CMakeLists\\.txt$" "^CMakeLists$" "\\.cmake$"))
   :init-package t)
 
 (use-custom-package
   :package-name 'paredit
+  :add-path "~/.emacs.d/packages/paredit"
   :init-package t)
 
 (use-custom-package
   :package-name 'project
+  :add-path "~/.emacs.d/packages/find-file-in-project"
   :init-package t)
 
 (use-custom-package
   :package-name 'db
+  :add-path "~/.emacs.d/packages/emacs-edbi"
   :init-package t)
 
 (use-custom-package
   :package-name 'highlight
+  :add-path "~/.emacs.d/packages/highlight-symbol"
   :init-package t)
 
 (use-custom-package
@@ -155,6 +181,7 @@
 
 (use-custom-package
   :package-name 'mmm
+  :add-path "~/.emacs.d/packages/rainbow-delimiters"
   :init-package t)
 
 ;; Geiser package together with scheme-mode
@@ -167,6 +194,7 @@
 
 (use-custom-package
   :package-name 'mmm
+  :add-path "~/.emacs.d/packages/mmm-mode"
   :mode '((nxml-web-mode "\\.tmpl$"))
   :line-numbers t
   :init-package t)
@@ -174,12 +202,18 @@
 (use-custom-package
   :package-name 'common-lisp
   :mode '((common-lisp-mode "\\.clisp$" "\\.lisp$"))
+  :add-path "~/.emacs.d/packages/slime"
   :minor-modes '(rainbow-delimiters-mode paredit-mode)
   :line-numbers t
   :init-package t)
 
 (use-custom-package
   :package-name 'perl
+  :add-path '("~/.emacs.d/packages/cperl-mode"
+              "~/.emacs.d/packages/tt-mode"
+              "~/.emacs.d/packages/sepia"
+              "~/.emacs.d/packages/emacs-flymake-perlcritic"
+              "~/.emacs.d/packages/emacs-pde/lisp")
   :mode '((cperl-mode "\\.pl$" "\\.pm$" "\\.PL$" "\\.t$" "\\.cgi$")
           (xs-mode "\\.xs$")
           (tt-mode "\\.tt$"))
@@ -200,12 +234,15 @@
 
 (use-custom-package
   :package-name 'lua
+  :add-path "~/.emacs.d/packages/lua-mode"
   :mode '((lua-mode "\\.lua$"))
   :line-numbers t
   :init-package t)
 
 (use-custom-package
   :package-name 'org
+  :add-path '("~/.emacs.d/packages/org-mode/lisp"
+              "~/.emacs.d/packages/org-mode/contrib/lisp")
   :init-package t)
 
 (use-custom-package
@@ -226,6 +263,7 @@
 
 ;; (use-custom-package
 ;;   :package-name 'python
+;;   :add-path "~/.emacs.d/packages/python-mode/"
 ;;   :mode '((python-mode "\\.py$"))
 ;;   :line-numbers t
 ;;   :init-package t)
@@ -239,6 +277,7 @@
 
 (use-custom-package
   :package-name 'ecb
+  :add-path "~/.emacs.d/packages/ecb/"
   :init-package t)
 
 ;; (use-custom-package
@@ -247,10 +286,12 @@
 
 ;; (use-custom-package
 ;;   :package-name 'heroku
+;;   :add-path "~/.emacs.d/packages/heroku"
 ;;   :init-package t)
 
 (use-custom-package
   :package-name 'clojure
+  :add-path "~/.emacs.d/packages/clojure-mode"
   :mode '((clojure-mode "\\.clj$"))
   :minor-modes '(rainbow-delimiters-mode paredit-mode)
   :line-numbers t
@@ -258,6 +299,7 @@
 
 ;; (use-custom-package
 ;;   :package-name 'haskell
+;;   :add-path "~/.emacs.d/packages/haskell-mode"
 ;;   :mode '((haskell-mode "\\.hs$"))
 ;;   :line-numbers t
 ;;   :init-package t)
@@ -270,24 +312,28 @@
 
 (use-custom-package
   :package-name 'markdown
+  :add-path "~/.emacs.d/packages/markdown-mode"
   :mode '((markdown-mode "\\.md$" "\\.mdwn$" "\\.mdt$"))
   :line-numbers t
   :init-package t)
 
 (use-custom-package
   :package-name 'sml
+  :add-path "~/.emacs.d/packages/sml-mode"
   :mode '((sml-mode "\\.sml$"))
   :line-numbers t
   :init-package t)
 
 (use-custom-package
   :package-name 'scala
+  :add-path "~/.emacs.d/packages/scala-mode2"
   :mode '((scala-mode2 "\\.scala$" "\\.sc$"))
   :line-numbers t
   :init-package t)
 
 ;; (use-custom-package
 ;;  :package-name 'nxhtml
+;;  :add-path "~/.emacs.d/packages/nxhtml"
 ;;  :init-package t)
 
 (use-custom-package
