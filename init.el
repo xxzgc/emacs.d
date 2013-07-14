@@ -21,164 +21,164 @@
 
 (require 'init-package)
 
-(def-custom-package
+(use-custom-package
   :package-name 'libraries
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'general-defuns
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'elpa
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'session
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'vline
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'window-number
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'nyan
   :init-package t)
 
-;; (def-custom-package
+;; (use-custom-package
 ;;  :package-name 'workspaces
 ;;  :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'perspective
   :init-package t)
 
-;; (def-custom-package
+;; (use-custom-package
 ;;  :package-name 'wm
 ;;  :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'linum
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'cua
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'minimap
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'iedit
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'multiplecursors
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'w3m
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'multiterm
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'twitter
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'jira
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'irc
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'autocomplete
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'yasnippet
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'flymake
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'ediff
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'git
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'mercurial
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'cc
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'cmake
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'paredit
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'project
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'db
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'highlight
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'rainbow-delimiters
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'mmm
   :init-package t)
 
 ;; Geiser package together with scheme-mode
-(def-custom-package
+(use-custom-package
   :package-name 'geiser
   :mode '((scheme-mode "\\.scm$" "\\.ss$" "\\.rkt$"))
   :minor-modes '(rainbow-delimiters-mode paredit-mode)
   :line-numbers t
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'mmm
   :mode '((nxml-web-mode "\\.tmpl$"))
   :line-numbers t
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'common-lisp
   :mode '((common-lisp-mode "\\.clisp$" "\\.lisp$"))
   :minor-modes '(rainbow-delimiters-mode paredit-mode)
   :line-numbers t
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'perl
   :mode '((cperl-mode "\\.pl$" "\\.pm$" "\\.PL$" "\\.t$" "\\.cgi$")
           (xs-mode "\\.xs$")
@@ -186,119 +186,119 @@
   :line-numbers t
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'ruby
   :mode '((ruby-mode "\\.rb$" "\\.rsel$" "\\.rhtml$" "\\.erb$" "\\.prawn$" "Rakefile$" "Gemfile$"))
   :line-numbers t
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'php
   :mode '((php-mode "\\.php$"))
   :line-numbers t
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'lua
   :mode '((lua-mode "\\.lua$"))
   :line-numbers t
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'org
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'sqlite
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'js
   :mode '((js2-mode "\\.js$" "\\.json$"))
   :line-numbers t
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'yaml
   :mode '((yaml-mode "\\.yaml$"))
   :line-numbers t
   :init-package t)
 
-;; (def-custom-package
+;; (use-custom-package
 ;;   :package-name 'python
 ;;   :mode '((python-mode "\\.py$"))
 ;;   :line-numbers t
 ;;   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'elisp
   :mode '((emacs-lisp-mode "\\.el$"))
   :minor-modes '(rainbow-delimiters-mode paredit-mode)
   :line-numbers t
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'ecb
   :init-package t)
 
-;; (def-custom-package
+;; (use-custom-package
 ;;  :package-name 'cedet
 ;;  :init-package t)
 
-(def-custom-package
-  :package-name 'modeline
-  :init-package t)
-
-;; (def-custom-package
+;; (use-custom-package
 ;;   :package-name 'heroku
 ;;   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'clojure
   :mode '((clojure-mode "\\.clj$"))
   :minor-modes '(rainbow-delimiters-mode)
   :line-numbers t
   :init-package t)
 
-;; (def-custom-package
+;; (use-custom-package
 ;;   :package-name 'haskell
 ;;   :mode '((haskell-mode "\\.hs$"))
 ;;   :line-numbers t
 ;;   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'shell-script
   :mode '((shell-script-mode "\\.sh$" "\\.bash$" "\\.zsh$" "^.zshrc$" "^.bashrc$"))
   :line-numbers t
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'markdown
   :mode '((markdown-mode "\\.md$" "\\.mdwn$" "\\.mdt$"))
   :line-numbers t
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'sml
   :mode '((sml-mode "\\.sml$"))
   :line-numbers t
   :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'scala
   :mode '((scala-mode2 "\\.scala$" "\\.sc$"))
   :line-numbers t
   :init-package t)
 
-;; (def-custom-package
+;; (use-custom-package
 ;;  :package-name 'nxhtml
 ;;  :init-package t)
 
-(def-custom-package
+(use-custom-package
   :package-name 'profile
   :init-package t)
 
-(def-custom-package
+(use-custom-package
+  :package-name 'modeline
+  :init-package t)
+
+(use-custom-package
   :package-name 'keybinds
   :init-package t)
 

@@ -1,4 +1,4 @@
-(defun* def-custom-package (&key package-name mode minor-modes line-numbers init-package)
+(defun* use-custom-package (&key package-name mode minor-modes line-numbers init-package)
   (dolist (item mode)
     (mapcar
       (lambda (filename-pattern)
