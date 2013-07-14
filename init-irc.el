@@ -69,6 +69,8 @@
 ;; GPG encrypted auth info
 ;; to encrypt your `auth-irc.el` with a password just run:
 ;; `gpg -c auth-irc.el`
+
+;;;###autoload
 (defun init-irc ()
   (interactive)
   (load-file "~/.emacs-private/auth-irc.el.gpg"))

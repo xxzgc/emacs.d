@@ -120,7 +120,8 @@
 (use-custom-package
   :package-name 'irc
   :defer t
-  :init-package t)
+  :init-package t
+  :init '(autoload 'init-irc "init-irc" "Initialize IRC" t))
 
 (use-custom-package
   :package-name 'autocomplete
