@@ -303,7 +303,8 @@
 
 (use-custom-package
   :package-name 'shell-script
-  :mode '((shell-script-mode "\\.sh$" "\\.bash$" "\\.zsh$" "^.zshrc$" "^.bashrc$"))
+  :mode '((shell-script-mode "\\.sh$" "\\.bash$" "\\.zsh$" "^.zshrc$"
+                             "^.bashrc$"))
   :line-numbers t
   :init-package t)
 
