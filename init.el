@@ -322,6 +322,7 @@
   :add-path "~/.emacs.d/packages/clojure-mode"
   :mode '((clojure-mode "\\.clj$"))
   :minor-modes '(rainbow-delimiters-mode paredit-mode)
+  :defer t
   :line-numbers t
   :init-package t)
 
