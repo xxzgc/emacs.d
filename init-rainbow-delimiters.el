@@ -1,7 +1,8 @@
 ;;; init-rainbow-delimiters.el
 
 ;; (add-to-list 'load-path "~/.emacs.d/packages/rainbow-delimiters")
-(require 'rainbow-delimiters)
+;; (require 'rainbow-delimiters)
+(autoload 'rainbow-delimiters-mode "rainbow-delimiters" "Rainbow delimiters" t)
 
 (add-hook 'eval-expression-minibuffer-setup-hook 'rainbow-delimiters-mode)
 (add-hook 'ielm-mode-hook             'rainbow-delimiters-mode)
