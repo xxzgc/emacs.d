@@ -40,6 +40,7 @@
                       (if (>= (current-column) 80)
                           'mode-line-80col-face
                         'mode-line-position-face)))
+   "]["
    (:propertize (:eval (format "%3d" (if mark-active
                                          (abs (- (mark) (point)))
                                        0)))
