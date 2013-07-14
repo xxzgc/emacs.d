@@ -252,7 +252,7 @@
 (use-custom-package
   :package-name 'clojure
   :mode '((clojure-mode "\\.clj$"))
-  :minor-modes '(rainbow-delimiters-mode)
+  :minor-modes '(rainbow-delimiters-mode paredit-mode)
   :line-numbers t
   :init-package t)
 
