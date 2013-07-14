@@ -66,6 +66,7 @@
 ;;  :package-name 'wm
 ;;  :add-path '("~/.emacs.d/packages/emacs-window-layout"
 ;;              "~/.emacs.d/packages/emacs-window-manager")
+;;  :defer t
 ;;  :init-package t)
 
 (use-custom-package
@@ -78,6 +79,7 @@
 
 (use-custom-package
   :package-name 'minimap
+  :defer t
   :init-package t)
 
 (use-custom-package
@@ -89,29 +91,35 @@
   :package-name 'multiplecursors
   :add-path '("~/.emacs.d/packages/multiple-cursors.el/"
               "~/.emacs.d/packages/mark-multiple/")
+  :defer t
   :init-package t)
 
 (use-custom-package
   :package-name 'w3m
   :add-path "~/.emacs.d/packages/emacs-w3m"
+  :defer t
   :init-package t)
 
 (use-custom-package
   :package-name 'multiterm
+  :defer t
   :init-package t)
 
 (use-custom-package
   :package-name 'twitter
   :add-path "~/.emacs.d/packages/twittering-mode"
+  :defer t
   :init-package t)
 
 (use-custom-package
   :package-name 'jira
   :add-path "~/.emacs.d/packages/emacs-soap-client"
+  :defer t
   :init-package t)
 
 (use-custom-package
   :package-name 'irc
+  :defer t
   :init-package t)
 
 (use-custom-package
@@ -128,36 +136,43 @@
 (use-custom-package
   :package-name 'flymake
   :add-path "~/.emacs.d/packages/emacs-flymake"
+  :defer t
   :init-package t)
 
 (use-custom-package
   :package-name 'ediff
+  :defer t
   :init-package t)
 
 (use-custom-package
   :package-name 'git
   :add-path '("~/.emacs.d/packages/egg"
               "~/.emacs.d/packages/egit")
+  :defer t
   :init-package t)
 
 (use-custom-package
   :package-name 'mercurial
   :add-path "~/.emacs.d/packages/ahg"
+  :defer t
   :init-package t)
 
 (use-custom-package
   :package-name 'cc
   :add-path "~/.emacs.d/packages/cc-mode"
+  :defer t
   :init-package t)
 
 (use-custom-package
   :package-name 'cmake
   :mode '((cmake-mode "^CMakeLists\\.txt$" "^CMakeLists$" "\\.cmake$"))
+  :defer t
   :init-package t)
 
 (use-custom-package
   :package-name 'paredit
   :add-path "~/.emacs.d/packages/paredit"
+  :defer t
   :init-package t)
 
 (use-custom-package
@@ -168,16 +183,19 @@
 (use-custom-package
   :package-name 'db
   :add-path "~/.emacs.d/packages/emacs-edbi"
+  :defer t
   :init-package t)
 
 (use-custom-package
   :package-name 'highlight
   :add-path "~/.emacs.d/packages/highlight-symbol"
+  :defer t
   :init-package t)
 
 (use-custom-package
   :package-name 'rainbow-delimiters
   :add-path "~/.emacs.d/packages/rainbow-delimiters"
+  :defer t
   :init-package t)
 
 ;; Geiser package together with scheme-mode
@@ -185,6 +203,7 @@
   :package-name 'geiser
   :mode '((scheme-mode "\\.scm$" "\\.ss$" "\\.rkt$"))
   :minor-modes '(rainbow-delimiters-mode paredit-mode)
+  :defer t
   :line-numbers t
   :init-package t)
 
@@ -192,6 +211,7 @@
   :package-name 'mmm
   :add-path "~/.emacs.d/packages/mmm-mode"
   :mode '((nxml-web-mode "\\.tmpl$"))
+  :defer t
   :line-numbers t
   :init-package t)
 
@@ -200,6 +220,7 @@
   :mode '((common-lisp-mode "\\.clisp$" "\\.lisp$"))
   :add-path "~/.emacs.d/packages/slime"
   :minor-modes '(rainbow-delimiters-mode paredit-mode)
+  :defer t
   :line-numbers t
   :init-package t)
 
@@ -213,6 +234,7 @@
   :mode '((cperl-mode "\\.pl$" "\\.pm$" "\\.PL$" "\\.t$" "\\.cgi$")
           (xs-mode "\\.xs$")
           (tt-mode "\\.tt$"))
+  :defer t
   :line-numbers t
   :init-package t)
 
@@ -220,12 +242,14 @@
   :package-name 'ruby
   :mode '((ruby-mode "\\.rb$" "\\.rsel$" "\\.rhtml$" "\\.erb$" "\\.prawn$"
                      "Rakefile$" "Gemfile$"))
+  :defer t
   :line-numbers t
   :init-package t)
 
 (use-custom-package
   :package-name 'php
   :mode '((php-mode "\\.php$"))
+  :defer t
   :line-numbers t
   :init-package t)
 
@@ -233,6 +257,7 @@
   :package-name 'lua
   :add-path "~/.emacs.d/packages/lua-mode"
   :mode '((lua-mode "\\.lua$"))
+  :defer t
   :line-numbers t
   :init-package t)
 
@@ -240,21 +265,25 @@
   :package-name 'org
   :add-path '("~/.emacs.d/packages/org-mode/lisp"
               "~/.emacs.d/packages/org-mode/contrib/lisp")
+  :defer t
   :init-package t)
 
 (use-custom-package
   :package-name 'sqlite
+  :defer t
   :init-package t)
 
 (use-custom-package
   :package-name 'js
   :mode '((js2-mode "\\.js$" "\\.json$"))
+  :defer t
   :line-numbers t
   :init-package t)
 
 (use-custom-package
   :package-name 'yaml
   :mode '((yaml-mode "\\.yaml$" "\\.yml$"))
+  :defer t
   :line-numbers t
   :init-package t)
 
@@ -262,6 +291,7 @@
 ;;   :package-name 'python
 ;;   :add-path "~/.emacs.d/packages/python-mode/"
 ;;   :mode '((python-mode "\\.py$"))
+;;   :defer t
 ;;   :line-numbers t
 ;;   :init-package t)
 
@@ -269,21 +299,25 @@
   :package-name 'elisp
   :mode '((emacs-lisp-mode "\\.el$"))
   :minor-modes '(rainbow-delimiters-mode paredit-mode)
+  :defer t
   :line-numbers t
   :init-package t)
 
 (use-custom-package
   :package-name 'ecb
   :add-path "~/.emacs.d/packages/ecb/"
+  :defer t
   :init-package t)
 
 ;; (use-custom-package
 ;;  :package-name 'cedet
+;;  :defer t
 ;;  :init-package t)
 
 ;; (use-custom-package
 ;;   :package-name 'heroku
 ;;   :add-path "~/.emacs.d/packages/heroku"
+;;   :defer t
 ;;   :init-package t)
 
 (use-custom-package
@@ -298,6 +332,7 @@
 ;;   :package-name 'haskell
 ;;   :add-path "~/.emacs.d/packages/haskell-mode"
 ;;   :mode '((haskell-mode "\\.hs$"))
+;;   :defer t
 ;;   :line-numbers t
 ;;   :init-package t)
 
@@ -305,6 +340,7 @@
   :package-name 'shell-script
   :mode '((shell-script-mode "\\.sh$" "\\.bash$" "\\.zsh$" "^.zshrc$"
                              "^.bashrc$"))
+  :defer t
   :line-numbers t
   :init-package t)
 
@@ -312,6 +348,7 @@
   :package-name 'markdown
   :add-path "~/.emacs.d/packages/markdown-mode"
   :mode '((markdown-mode "\\.md$" "\\.mdwn$" "\\.mdt$"))
+  :defer t
   :line-numbers t
   :init-package t)
 
@@ -319,6 +356,7 @@
   :package-name 'sml
   :add-path "~/.emacs.d/packages/sml-mode"
   :mode '((sml-mode "\\.sml$"))
+  :defer t
   :line-numbers t
   :init-package t)
 
@@ -326,12 +364,14 @@
   :package-name 'scala
   :add-path "~/.emacs.d/packages/scala-mode2"
   :mode '((scala-mode2 "\\.scala$" "\\.sc$"))
+  :defer t
   :line-numbers t
   :init-package t)
 
 ;; (use-custom-package
 ;;  :package-name 'nxhtml
 ;;  :add-path "~/.emacs.d/packages/nxhtml"
+;;  :defer t
 ;;  :init-package t)
 
 (use-custom-package
