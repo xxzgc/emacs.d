@@ -17,10 +17,10 @@
       (warn "minor-modes should be list"))
     (when line-numbers
       (add-hook (intern (concat (symbol-name (car item)) "-hook"))
-                (lambda() (linum-mode))))
-    (if init-package
-        (let ((package-s (intern (concat "init-" (symbol-name package-name)))))
-          (unless (featurep package-s)
-            (require package-s))))))
+                (lambda() (linum-mode)))))
+  (if init-package
+      (let ((package-s (intern (concat "init-" (symbol-name package-name)))))
+        (unless (featurep package-s)
+          (require package-s)))))
 
 (provide 'init-package)
