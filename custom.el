@@ -133,4 +133,8 @@
 (require 'whitespace)
 (setq whitespace-line-column 79 ;; limit line length
       whitespace-style '(face lines-tail empty spaces tabs newline space-mark tab-mark newline-mark))
+
+;; Number of characters in selected region displayed in mode-line
+(defvar selected-characters 0)
+
 ;;; }}

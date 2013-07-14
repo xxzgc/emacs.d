@@ -40,7 +40,12 @@
                       (if (>= (current-column) 80)
                           'mode-line-80col-face
                         'mode-line-position-face)))
+   (:propertize (:eval (format "@%3d" (if mark-actives
+                                         (abs (- (mark) (point)))
+                                       0)))
+                face mode-line-selected-count-face)
    "] "
+
    ;; emacsclient [default -- keep?]
    mode-line-client
    " %Z    "
@@ -95,6 +100,7 @@
 (make-face 'mode-line-buffer-modified)
 (make-face 'mode-line-position-face)
 (make-face 'mode-line-rel-position-face)
+(make-face 'mode-line-selected-count-face)
 (make-face 'mode-line-mode-face)
 (make-face 'mode-line-minor-mode-face)
 (make-face 'mode-line-process-face)
@@ -157,6 +163,12 @@
     :weight 'bold
     :foreground "#eead0e"
     :height 120)
+
+(set-face-attribute 'mode-line-selected-count-face nil
+    :inherit 'mode-line-face
+    :family "Ubuntu Mono"
+    :foreground "gray60"
+    :height 110)
 
 (set-face-attribute 'mode-line-mode-face nil
     :inherit 'mode-line-face
