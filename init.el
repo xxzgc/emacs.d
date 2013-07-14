@@ -148,7 +148,6 @@
   :package-name 'git
   :add-path '("~/.emacs.d/packages/egg"
               "~/.emacs.d/packages/egit")
-  :defer t
   :init-package t)
 
 (use-custom-package
@@ -172,7 +171,6 @@
 (use-custom-package
   :package-name 'paredit
   :add-path "~/.emacs.d/packages/paredit"
-  :defer t
   :init-package t)
 
 (use-custom-package
@@ -195,7 +193,6 @@
 (use-custom-package
   :package-name 'rainbow-delimiters
   :add-path "~/.emacs.d/packages/rainbow-delimiters"
-  :defer t
   :init-package t)
 
 ;; Geiser package together with scheme-mode
