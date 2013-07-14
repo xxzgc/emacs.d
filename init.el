@@ -233,7 +233,8 @@
           (tt-mode "\\.tt$"))
   :defer t
   :line-numbers t
-  :init-package t)
+  :init-package t
+  :init '(defalias 'perl-mode 'cperl-mode))
 
 (use-custom-package
   :package-name 'ruby
