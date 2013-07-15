@@ -80,6 +80,7 @@
 (use-custom-package
   :package-name 'minimap
   :defer t
+  :autoload '(minimap-create minimap-toggle)
   :init-package t)
 
 (use-custom-package
@@ -98,17 +99,20 @@
   :package-name 'w3m
   :add-path "~/.emacs.d/packages/emacs-w3m"
   :defer t
+  :autoload '(w3m)
   :init-package t)
 
 (use-custom-package
   :package-name 'multiterm
   :defer t
+  :autoload '(multi-term)
   :init-package t)
 
 (use-custom-package
   :package-name 'twitter
   :add-path "~/.emacs.d/packages/twittering-mode"
   :defer t
+  :autoload '(twit)
   :init-package t)
 
 (use-custom-package
@@ -120,8 +124,8 @@
 (use-custom-package
   :package-name 'irc
   :defer t
-  :init-package t
-  :init '(autoload 'init-irc "init-irc" "Initialize IRC" t))
+  :autoload '(init-irc)
+  :init-package t)
 
 (use-custom-package
   :package-name 'autocomplete
@@ -143,6 +147,7 @@
 (use-custom-package
   :package-name 'ediff
   :defer t
+  :autoload '(ediff ediff3)
   :init-package t)
 
 (use-custom-package

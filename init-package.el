@@ -1,4 +1,4 @@
-(defun* use-custom-package (&key add-path package-name mode minor-modes defer line-numbers init-package init)
+(defun* use-custom-package (&key add-path package-name mode minor-modes defer line-numbers init-package init autoload)
   (if add-path
       (if (listp add-path)
           (dolist (path-item add-path)
@@ -11,6 +11,12 @@
       (if (and (not defer)
                (not (featurep package-s)))
           (require package-s))))
+  (dolist (autoload-item autoload)
+    (autoload
+      autoload-item
+      (concat "init-" (symbol-name package-name))
+      (format "Lazy initialization of %s" (concat "init-" (symbol-name package-name)))
+      t))
   (dolist (item mode)
     (mapcar
       (lambda (filename-pattern)
