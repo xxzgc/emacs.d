@@ -36,13 +36,20 @@
                (erc :server ,server :port ,port :nick ,nick :password ,pass))))))
 
 (require 'notifications)
+
 (defun erc-global-notify (match-type nick message)
   "Notify when a message is recieved."
-  (notifications-notify
-   :title nick
-   :body message
-   :app-icon "/usr/share/notify-osd/icons/gnome/scalable/status/notification-message-im.svg"
-   :urgency 'critical))
+  (when (or (eq match-type 'current-nick)
+            (and (eq match-type 'keyword)
+                 (null (string-match "^\\(bodger\\|CHANSERV\\|server\\|*buffextras\\)" nick))))
+      (notifications-notify
+       :title nick
+       :body message
+       :app-icon "/usr/share/notify-osd/icons/gnome/scalable/status/notification-message-im.svg"
+       :urgency (if (and (eq match-type 'current-nick)
+                         (null (string-match "^\\(bodger\\|CHANSERV\\|server\\|*buffextras\\)" nick)))
+                    'critical
+                  'normal))))
 
 (add-hook 'erc-text-matched-hook 'erc-global-notify)
 
