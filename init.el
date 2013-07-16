@@ -181,7 +181,8 @@
 
 (use-custom-package
   :package-name 'project
-  :add-path "~/.emacs.d/packages/find-file-in-project"
+  :add-path '("~/.emacs.d/packages/find-file-in-project"
+              "~/.emacs.d/packages/projectile")
   :init-package t)
 
 (use-custom-package

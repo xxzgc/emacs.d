@@ -152,3 +152,6 @@
 [submodule "packages/twittering-mode"]
 	path = packages/twittering-mode
 	url = git@github.com:hayamiz/twittering-mode.git
+[submodule "packages/projectile"]
+	path = packages/projectile
+	url = git@github.com:bbatsov/projectile.git
