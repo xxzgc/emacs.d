@@ -9,6 +9,9 @@
  '(erc-save-buffer-on-part t)
  '(erc-log-insert-log-on-open nil)
  '(erc-enable-logging (quote erc-log-all-but-server-buffers))
+;; autojoin button completion dcc fill irccontrols list match menu
+;; move-to-prompt netsplit networks noncommands readonly ring stamp track
+;; truncate services images highlight-nicknames hl-nicks
  '(erc-modules (quote (stamp log irccontrols completion list match button))) 
  '(erc-log-mode t)
  '(erc-timestamp-mode 1) ;; timestamp the conversations
