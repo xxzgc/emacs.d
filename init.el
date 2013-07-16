@@ -307,7 +307,7 @@
 (use-custom-package
   :package-name 'elisp
   :mode '((emacs-lisp-mode "\\.el$"))
-  :minor-modes '(rainbow-delimiters-mode paredit-mode)
+  :minor-modes '(rainbow-delimiters-mode paredit-mode projectile-on)
   :defer t
   :line-numbers t
   :init-package t)
@@ -350,6 +350,7 @@
   :package-name 'shell-script
   :mode '((shell-script-mode "\\.sh$" "\\.bash$" "\\.zsh$" "^.zshrc$"
                              "^.bashrc$"))
+  :minor-modes '(projectile-on)
   :defer t
   :line-numbers t
   :init-package t)
