@@ -2,12 +2,14 @@
 ;; ERC ( is a powerful, modular, and extensible Emacs InternetRelayChat client )
 ;; docs: http://mwolson.org/static/doc/erc.html )
 
+(require 'erc-button)
+
 (custom-set-variables
  '(erc-log-channels-directory "~/.emacs-irc-log")
  '(erc-save-buffer-on-part t)
  '(erc-log-insert-log-on-open nil)
  '(erc-enable-logging (quote erc-log-all-but-server-buffers))
- '(erc-modules (quote (stamp log)))
+ '(erc-modules (quote (stamp log completion list menu match button)))
  '(erc-log-mode t)
  '(erc-timestamp-mode 1) ;; timestamp the conversations
  '(erc-log-write-after-send t)
