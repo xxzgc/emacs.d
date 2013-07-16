@@ -184,8 +184,9 @@
 
 (use-custom-package
   :package-name 'project
-  :add-path '("~/.emacs.d/packages/find-file-in-project"
-              "~/.emacs.d/packages/projectile")
+  :add-path '("~/.emacs.d/packages/projectile")
+  :defer t
+  :autoload '(projectile-on projectile-mode)
   :init-package t)
 
 (use-custom-package
