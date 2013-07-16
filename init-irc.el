@@ -9,7 +9,7 @@
  '(erc-save-buffer-on-part t)
  '(erc-log-insert-log-on-open nil)
  '(erc-enable-logging (quote erc-log-all-but-server-buffers))
- '(erc-modules (quote (stamp log completion list menu match button)))
+ '(erc-modules (quote (stamp log irccontrols completion list menu match button)))
  '(erc-log-mode t)
  '(erc-timestamp-mode 1) ;; timestamp the conversations
  '(erc-log-write-after-send t)
