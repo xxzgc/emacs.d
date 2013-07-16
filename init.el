@@ -238,6 +238,7 @@
   :mode '((cperl-mode "\\.pl$" "\\.pm$" "\\.PL$" "\\.t$" "\\.cgi$")
           (xs-mode "\\.xs$")
           (tt-mode "\\.tt$"))
+  :minor-modes '(projectile-on)
   :defer t
   :line-numbers t
   :init-package t
