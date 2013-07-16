@@ -155,3 +155,9 @@
 [submodule "packages/projectile"]
 	path = packages/projectile
 	url = git@github.com:bbatsov/projectile.git
+[submodule "packages/s"]
+	path = packages/s
+	url = git@github.com:magnars/s.el.git
+[submodule "packages/dash"]
+	path = packages/dash
+	url = git@github.com:magnars/dash.el.git

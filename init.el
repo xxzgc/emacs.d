@@ -25,7 +25,9 @@
   :package-name 'libraries
   :add-path '("~/.emacs.d/packages/emacs-deferred"
               "~/.emacs.d/packages/emacs-epc"
-              "~/.emacs.d/packages/emacs-ctable")
+              "~/.emacs.d/packages/emacs-ctable"
+              "~/.emacs.d/packages/s"
+              "~/.emacs.d/packages/dash")
   :init-package t)
 
 (use-custom-package
