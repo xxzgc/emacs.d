@@ -161,3 +161,6 @@
 [submodule "packages/dash"]
 	path = packages/dash
 	url = git@github.com:magnars/dash.el.git
+[submodule "packages/grizzl"]
+	path = packages/grizzl
+	url = git@github.com:d11wtq/grizzl.git

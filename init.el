@@ -27,7 +27,8 @@
               "~/.emacs.d/packages/emacs-epc"
               "~/.emacs.d/packages/emacs-ctable"
               "~/.emacs.d/packages/s"
-              "~/.emacs.d/packages/dash")
+              "~/.emacs.d/packages/dash"
+              "~/.emacs.d/packages/grizzl")
   :init-package t)
 
 (use-custom-package
