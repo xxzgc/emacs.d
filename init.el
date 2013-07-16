@@ -293,6 +293,7 @@
 (use-custom-package
   :package-name 'yaml
   :mode '((yaml-mode "\\.yaml$" "\\.yml$"))
+  :minor-modes '(projectile-on)
   :defer t
   :line-numbers t
   :init-package t)
