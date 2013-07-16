@@ -20,7 +20,7 @@
   (dolist (item mode)
     (mapcar
       (lambda (filename-pattern)
-        `(add-to-list 'auto-mode-alist '(,filename-pattern . ,(car item))))
+        (add-to-list 'auto-mode-alist `(,filename-pattern . ,(car item))))
       (cdr item))
     (when defer
       (eval-after-load (symbol-name (car item))
@@ -29,7 +29,7 @@
               (require package-s)))))
     (if (listp minor-modes)
         (dolist (mmode minor-modes)
-          `(add-hook (intern (concat (symbol-name (car item)) "-hook")) ,mmode))
+          (add-hook (intern (concat (symbol-name (car item)) "-hook")) mmode))
       (warn "minor-modes should be list"))
     (when line-numbers
       (add-hook (intern (concat (symbol-name (car item)) "-hook"))
