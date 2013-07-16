@@ -3,8 +3,9 @@
 ;; (require 'find-file-in-project)
 
 (require 'projectile)
+(require 'grizzl)
 
 (setq projectile-enable-caching t)
-(setq projectile-completion-system 'ido) ;; default or grizzl
+(setq projectile-completion-system 'grizzl) ;; default or grizzl
 
 (provide 'init-project)
