@@ -17,6 +17,7 @@
  '(erc-timestamp-mode 1) ;; timestamp the conversations
  '(erc-log-write-after-send t)
  '(erc-log-write-after-insert t)
+ '(erc-interpret-mirc-color t)
  '(erc-timestamp-only-if-changed-flag nil)
  '(erc-timestamp-format "[%H:%M:%S] ")
  '(erc-fill-prefix      "           ")
