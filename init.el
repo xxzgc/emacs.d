@@ -158,7 +158,9 @@
 (use-custom-package
   :package-name 'git
   :add-path '("~/.emacs.d/packages/egg"
-              "~/.emacs.d/packages/egit")
+              "~/.emacs.d/packages/egit"
+              ;; "~/.emacs.d/packages/magit"
+              )
   :init-package t)
 
 (use-custom-package

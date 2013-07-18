@@ -167,3 +167,6 @@
 [submodule "packages/company-mode"]
 	path = packages/company-mode
 	url = git@github.com:company-mode/company-mode.git
+[submodule "packages/magit"]
+	path = packages/magit
+	url = git@github.com:magit/magit.git
