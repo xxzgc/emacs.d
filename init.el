@@ -133,7 +133,9 @@
 (use-custom-package
   :package-name 'autocomplete
   :add-path '("~/.emacs.d/packages/popup/"
-              "~/.emacs.d/packages/auto-complete/")
+              "~/.emacs.d/packages/auto-complete/"
+              ;; "~/.emacs.d/packages/company-mode/"
+              )
   :init-package t)
 
 (use-custom-package

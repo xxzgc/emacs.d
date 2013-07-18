@@ -11,6 +11,9 @@
 (ac-config-default)
 
 (auto-complete-mode t)
+
+;; (add-hook 'after-init-hook 'global-company-mode)
+
 ;; }}
 
 (provide 'init-autocomplete)

@@ -164,3 +164,6 @@
 [submodule "packages/grizzl"]
 	path = packages/grizzl
 	url = git@github.com:d11wtq/grizzl.git
+[submodule "packages/company-mode"]
+	path = packages/company-mode
+	url = git@github.com:company-mode/company-mode.git
