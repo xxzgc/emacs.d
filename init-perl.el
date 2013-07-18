@@ -174,6 +174,10 @@
 (load "~/.emacs.d/perl/defuns.el")
 
 (init-pde)
+
+;; PDE defines own cperl-mode style. I don't like it.
+(remove-hook 'cperl-mode-hook 'pde-perl-mode-hook)
+
 (init-perlysense)
 
 (setq cperl-auto-newline nil
