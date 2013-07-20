@@ -233,6 +233,7 @@
   :add-path "~/.emacs.d/packages/slime"
   :minor-modes '(rainbow-delimiters-mode paredit-mode)
   :defer t
+  :autoload '(slime slime-setup)
   :line-numbers t
   :init-package t)
 
