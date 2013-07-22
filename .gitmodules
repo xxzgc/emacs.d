@@ -170,3 +170,12 @@
 [submodule "packages/magit"]
 	path = packages/magit
 	url = git@github.com:magit/magit.git
+[submodule "packages/git-gutter-plus"]
+	path = packages/git-gutter-plus
+	url = git@github.com:nonsequitur/git-gutter-plus.git
+[submodule "packages/git-gutter-fringe-plus"]
+	path = packages/git-gutter-fringe-plus
+	url = git@github.com:nonsequitur/git-gutter-fringe-plus.git
+[submodule "packages/fringe-helper"]
+	path = packages/fringe-helper
+	url = git@github.com:nschum/fringe-helper.el.git

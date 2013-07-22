@@ -28,7 +28,8 @@
               "~/.emacs.d/packages/emacs-ctable"
               "~/.emacs.d/packages/s"
               "~/.emacs.d/packages/dash"
-              "~/.emacs.d/packages/grizzl")
+              "~/.emacs.d/packages/grizzl"
+              "~/.emacs.d/packages/fringe-helper")
   :init-package t)
 
 (use-custom-package
@@ -160,6 +161,8 @@
   :add-path '("~/.emacs.d/packages/egg"
               "~/.emacs.d/packages/egit"
               ;; "~/.emacs.d/packages/magit"
+              "~/.emacs.d/packages/git-gutter-plus"
+              "~/.emacs.d/packages/git-gutter-fringe-plus"
               )
   :init-package t)
 
