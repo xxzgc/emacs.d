@@ -2,6 +2,11 @@
 # name: has attribute => ( ... );
 # key: has
 # --
+
+=item $1
+
+=cut
+
 has ${1:attribute} => (
     $0
 );
