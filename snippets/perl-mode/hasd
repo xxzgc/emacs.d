@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: has attribute => ( ..., default => sub { ... } );
+# key: hasd
+# --
+
+=item $1
+
+=cut
+
+has ${1:attribute} => (
+    is      => 'ro',
+    isa     => '${2:inherited_from}',
+    lazy    => 1,
+    default => sub { $0 },
+);

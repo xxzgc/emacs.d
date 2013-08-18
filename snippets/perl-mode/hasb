@@ -1,0 +1,22 @@
+# -*- mode: snippet -*-
+# name: has attribute => ( ... ); sub _build_attribute {  }
+# key: hasb
+# --
+
+=item $1
+
+=cut
+
+has ${1:attribute} => (
+    is         => 'ro',
+    isa        => '${2:inherited_from}',
+    lazy_build => 1,
+);
+
+sub _build_$1 {
+    my $self = shift;
+
+    my $$1 = $2->new;
+    $0
+    return $$1;
+}

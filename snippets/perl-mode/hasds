@@ -1,0 +1,22 @@
+# -*- mode: snippet -*-
+# name: has attribute => ( ..., default => sub { my $self = shift; ... } );
+# key: hasds
+# --
+
+=item $1
+
+=cut
+
+has ${1:attribute} => (
+    is      => 'ro',
+    isa     => '${2:inherited_from}',
+    lazy    => 1,
+    default => sub {
+        my $self = shift;
+
+        my $$1 = $2->new;
+        $0
+
+        return $$1;
+    },
+);
