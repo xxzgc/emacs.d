@@ -391,5 +391,29 @@
 ;;      (re-search-forward "\\(use\\|require\\)\\s-+\\([A-Za-z_0-9:]+\\)\\s-+;" end t)
 ;;)
 
+(defun json-to-perl (start end)
+  ;; replace `" : ` to `" => `
+  (replace-regexp "\"\\s-*:\\s-*" "\" => " nil start end)
+  ;; unquote left-hand side keys if it's possible
+  (replace-regexp "\"\\([A-Za-z_0-9]+\\)\"\\s-*=>" "\\1 =>" nil start end))
+
+(defun p5-json-to-perl-region (start end)
+  "Convert JSON string into a Perl structure. Bool type convers into 1/0"
+  (interactive "*r")
+  ;; replace true to 1
+  (replace-regexp "\"\\s-*:\\s-*true" "\" => 1" nil start end)
+  ;; replace false to 2
+  (replace-regexp "\"\\s-*:\\s-*false" "\" => 0" nil start end)
+  (json-to-perl start end))
+
+(defun p5-json-to-perl-bool-region (start end)
+  "Convert JSON string into a Perl structure. Bool type convers into JSON::true/JSON::false"
+  (interactive "*r")
+  ;; replace true to JSON::true
+  (replace-regexp "\"\\s-*:\\s-*true" "\" => JSON::true" nil start end)
+  ;; replace false to JSON::false
+  (replace-regexp "\"\\s-*:\\s-*false" "\" => JSON::false" nil start end)
+  (json-to-perl start end))
+
 (provide 'defuns)
 ;;; defuns.el ends here
