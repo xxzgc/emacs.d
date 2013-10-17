@@ -3,6 +3,8 @@
 ;; docs: http://mwolson.org/static/doc/erc.html )
 
 (require 'erc-button)
+(require 'notifications)
+(require 'erc-match)
 
 (custom-set-variables
  '(erc-log-channels-directory "~/.emacs-irc-log")
@@ -12,7 +14,7 @@
 ;; autojoin button completion dcc fill irccontrols list match menu
 ;; move-to-prompt netsplit networks noncommands readonly ring stamp track
 ;; truncate services images highlight-nicknames hl-nicks
- '(erc-modules (quote (stamp log irccontrols completion scrolltobottom list match button))) 
+ '(erc-modules (quote (stamp log irccontrols completion scrolltobottom list match button notifications spelling))) 
  '(erc-log-mode t)
  '(erc-timestamp-mode 1) ;; timestamp the conversations
  '(erc-log-write-after-send t)
@@ -24,7 +26,6 @@
  '(erc-insert-timestamp-function 'erc-insert-timestamp-left)
  '(erc-hide-timestamps nil))
 
-(require 'erc-match)
 (erc-match-mode t)
 (setq erc-keywords '("taras" "iagniuk" "comcure" "lviv" "ukraine"
                      "emacs")) ;; yeah, I want to know who mention emacs
@@ -40,8 +41,6 @@
                                                'erc-open-ssl-stream
                                              'open-network-stream)))
                (erc :server ,server :port ,port :nick ,nick :password ,pass))))))
-
-(require 'notifications)
 
 (defun erc-global-notify (match-type nick message)
   "Notify when a message is recieved."
