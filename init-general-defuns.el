@@ -384,4 +384,19 @@ The possible chars are 0 to 9, and a to z (lower case)."
   (interactive "nColumn: ")
   (move-to-column column t))
 
+(defun sort-words (reverse beg end)
+  "Sort words in region alphabetically, in REVERSE if negative.
+   Prefixed with negative \\[universal-argument], sorts in reverse.
+   The variable `sort-fold-case' determines whether alphabetic case
+   affects the sort order.
+   See `sort-regexp-fields'."
+  (interactive "*P\nr")
+  (sort-regexp-fields reverse "\\w+" "\\&" beg end))
+
+(defun sort-symbols (reverse beg end)
+  "Sort symbols in region alphabetically, in REVERSE if negative.
+   See `sort-words'."
+  (interactive "*P\nr")
+  (sort-regexp-fields reverse "\\(\\sw\\|\\s_\\)+" "\\&" beg end))
+
 (provide 'init-general-defuns)
