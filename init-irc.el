@@ -2,6 +2,8 @@
 ;; ERC ( is a powerful, modular, and extensible Emacs InternetRelayChat client )
 ;; docs: http://mwolson.org/static/doc/erc.html )
 
+(require 'erc)
+(require 'xml) ;; erc-notifications uses `xml-escape-string` function from this module
 (require 'erc-button)
 (require 'notifications)
 (require 'erc-match)
