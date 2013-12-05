@@ -13,8 +13,6 @@
  '(erc-save-buffer-on-part t)
  '(erc-log-insert-log-on-open nil)
  '(erc-enable-logging (quote erc-log-all-but-server-buffers))
- '(erc-log-mode t)
- '(erc-timestamp-mode 1) ;; timestamp the conversations
  '(erc-log-write-after-send t)
  '(erc-log-write-after-insert t)
  '(erc-interpret-mirc-color t)
@@ -59,7 +57,6 @@
 ;; (asf-erc-bouncer-connect erc-freenode "irc.freenode.net" 6667 "newbie" nil "pass1")
 ;; ssl connecion:
 ;; (asf-erc-bouncer-connect erc-freenodessl "irc.freenode.net" 6697 "newbie" t nil)
-
 
 ;; Erc Auto Join
 (defmacro erc-autojoin (&rest args)
