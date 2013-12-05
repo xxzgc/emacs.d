@@ -9,14 +9,14 @@
 (require 'erc-match)
 
 (custom-set-variables
+ ;; autojoin button completion dcc fill irccontrols list match menu
+ ;; move-to-prompt netsplit networks noncommands readonly ring stamp track
+ ;; truncate services images highlight-nicknames hl-nicks
+ '(erc-modules '(match stamp log irccontrols completion scrolltobottom list button spelling move-to-prompt))
  '(erc-log-channels-directory "~/.emacs-irc-log")
  '(erc-save-buffer-on-part t)
  '(erc-log-insert-log-on-open nil)
  '(erc-enable-logging (quote erc-log-all-but-server-buffers))
-;; autojoin button completion dcc fill irccontrols list match menu
-;; move-to-prompt netsplit networks noncommands readonly ring stamp track
-;; truncate services images highlight-nicknames hl-nicks
- '(erc-modules (quote (stamp log irccontrols completion scrolltobottom list match button notifications spelling))) 
  '(erc-log-mode t)
  '(erc-timestamp-mode 1) ;; timestamp the conversations
  '(erc-log-write-after-send t)
