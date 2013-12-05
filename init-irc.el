@@ -20,11 +20,13 @@
  '(erc-timestamp-format "[%H:%M:%S] ")
  '(erc-fill-prefix      "           ")
  '(erc-insert-timestamp-function 'erc-insert-timestamp-left)
- '(erc-hide-timestamps nil))
+ '(erc-hide-timestamps nil)
+ '(erc-current-nick-highlight-type 'nick-or-keyword))
 
 (erc-match-mode t)
 (setq erc-keywords '("taras" "iagniuk" "comcure" "lviv" "ukraine"
                      "emacs")) ;; yeah, I want to know who mention emacs
+;; (setq erc-keywords '(("emacs" (:foreground "green"))))
 
 (defmacro asf-erc-bouncer-connect (command server port nick ssl pass)
    "Create interactive command `command', for connecting to an IRC server. The command uses interactive mode if passed an argument."
