@@ -8,19 +8,30 @@
  ;; autojoin button completion dcc fill irccontrols list match menu
  ;; move-to-prompt netsplit networks noncommands readonly ring stamp track
  ;; truncate services images highlight-nicknames hl-nicks
- '(erc-modules '(match stamp log irccontrols completion scrolltobottom list button spelling move-to-prompt))
+ '(erc-modules '(pcomplete netsplit button match track completion readonly ring noncommands irccontrols move-to-prompt stamp menu list log spelling))
+
+ ;; Log
  '(erc-log-channels-directory "~/.emacs-irc-log")
- '(erc-save-buffer-on-part t)
  '(erc-log-insert-log-on-open nil)
- '(erc-enable-logging (quote erc-log-all-but-server-buffers))
- '(erc-log-write-after-send t)
- '(erc-log-write-after-insert t)
+ '(erc-enable-logging 'erc-log-all-but-server-buffers)
+ '(erc-save-buffer-on-part t)
+ '(erc-save-queries-on-quit t)
+ ; Both erc-log-write-after-(send|insert) are quite slow,
+ ; so disable them
+ '(erc-log-write-after-send nil)
+ '(erc-log-write-after-insert nil)
+
+ ;; Color
  '(erc-interpret-mirc-color t)
+
+ ;; Timestamp
  '(erc-timestamp-only-if-changed-flag nil)
  '(erc-timestamp-format "[%H:%M:%S] ")
  '(erc-fill-prefix      "           ")
  '(erc-insert-timestamp-function 'erc-insert-timestamp-left)
  '(erc-hide-timestamps nil)
+
+ ;; Highlight
  '(erc-current-nick-highlight-type 'nick-or-keyword))
 
 (erc-match-mode t)
