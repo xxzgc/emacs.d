@@ -179,3 +179,15 @@
 [submodule "packages/fringe-helper"]
 	path = packages/fringe-helper
 	url = git@github.com:nschum/fringe-helper.el.git
+[submodule "packages/cider"]
+	path = packages/cider
+	url = git@github.com:clojure-emacs/cider.git
+[submodule "packages/ac-nrepl"]
+	path = packages/ac-nrepl
+	url = git@github.com:clojure-emacs/ac-nrepl.git
+[submodule "packages/pkg-info"]
+	path = packages/pkg-info
+	url = git@github.com:lunaryorn/pkg-info.el.git
+[submodule "packages/epl"]
+	path = packages/epl
+	url = git@github.com:cask/epl.git

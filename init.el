@@ -23,7 +23,9 @@
 
 (use-custom-package
   :package-name 'libraries
-  :add-path '("~/.emacs.d/packages/emacs-deferred"
+  :add-path '("~/.emacs.d/packages/epl"
+              "~/.emacs.d/packages/pkg-info"
+              "~/.emacs.d/packages/emacs-deferred"
               "~/.emacs.d/packages/emacs-epc"
               "~/.emacs.d/packages/emacs-ctable"
               "~/.emacs.d/packages/s"
@@ -341,7 +343,9 @@
 
 (use-custom-package
   :package-name 'clojure
-  :add-path "~/.emacs.d/packages/clojure-mode"
+  :add-path '("~/.emacs.d/packages/ac-nrepl"
+              "~/.emacs.d/packages/cider"
+              "~/.emacs.d/packages/clojure-mode")
   :mode '((clojure-mode "\\.clj$"))
   :minor-modes '(rainbow-delimiters-mode paredit-mode)
   :defer t
