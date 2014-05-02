@@ -137,4 +137,10 @@
 ;; Number of characters in selected region displayed in mode-line
 (defvar selected-characters 0)
 
+;; after copy Ctrl+c in X11 apps, you can paste by `yank' in emacs
+(setq x-select-enable-clipboard t)
+
+;; after mouse selection in X11, you can paste by `yank' in emacs
+(setq x-select-enable-primary t)
+
 ;;; }}
