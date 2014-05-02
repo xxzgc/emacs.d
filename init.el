@@ -278,6 +278,7 @@
   :add-path "~/.emacs.d/packages/lua-mode"
   :mode '((lua-mode "\\.lua$"))
   :defer t
+  :autoload '(lua-mode)
   :line-numbers t
   :init-package t)
 
@@ -349,6 +350,8 @@
   :mode '((clojure-mode "\\.clj$"))
   :minor-modes '(rainbow-delimiters-mode paredit-mode)
   :defer t
+  :autoload '(clojure-mode) ;; need to specify autoload as clojure-mode isn't
+                            ;; loaded at this point
   :line-numbers t
   :init-package t)
 
@@ -390,6 +393,7 @@
   :add-path "~/.emacs.d/packages/scala-mode2"
   :mode '((scala-mode2 "\\.scala$" "\\.sc$"))
   :defer t
+  :autoload '(scala-mode)
   :line-numbers t
   :init-package t)
 
