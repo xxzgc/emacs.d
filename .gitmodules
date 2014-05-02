@@ -191,3 +191,6 @@
 [submodule "packages/epl"]
 	path = packages/epl
 	url = git@github.com:cask/epl.git
+[submodule "packages/git-modes"]
+	path = packages/git-modes
+	url = git@github.com:magit/git-modes.git

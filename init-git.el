@@ -15,6 +15,13 @@
 (require 'git-gutter-fringe+)
 (global-git-gutter+-mode t)
 
+;; Git Modes
+(require 'git-commit-mode)
+(require 'git-rebase-mode)
+(require 'gitconfig-mode)
+(require 'gitignore-mode)
+(require 'gitattributes-mode)
+
 ;;; Jump between hunks
 (global-set-key (kbd "C-c n") 'git-gutter+-next-hunk)
 (global-set-key (kbd "C-c p") 'git-gutter+-previous-hunk)

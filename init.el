@@ -160,7 +160,8 @@
 
 (use-custom-package
   :package-name 'git
-  :add-path '("~/.emacs.d/packages/egg"
+  :add-path '("~/.emacs.d/packages/git-modes"
+              "~/.emacs.d/packages/egg"
               "~/.emacs.d/packages/egit"
               ;; "~/.emacs.d/packages/magit"
               "~/.emacs.d/packages/git-gutter-plus"
