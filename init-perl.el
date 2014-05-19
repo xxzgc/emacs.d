@@ -32,7 +32,8 @@
 (add-hook 'cperl-mode-hook 
            (lambda()
              (perl-completion-mode t)
-             (yas/minor-mode-on)))
+             (yas/minor-mode-on)
+             (highlight-symbol-mode t)))
 
 ;; xs-mode
 ;; (require 'xs-mode)
