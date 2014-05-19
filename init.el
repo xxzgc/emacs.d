@@ -208,7 +208,6 @@
 (use-custom-package
   :package-name 'highlight
   :add-path "~/.emacs.d/packages/highlight-symbol"
-  :defer t
   :init-package t)
 
 (use-custom-package
