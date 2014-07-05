@@ -194,3 +194,6 @@
 [submodule "packages/git-modes"]
 	path = packages/git-modes
 	url = git@github.com:magit/git-modes.git
+[submodule "packages/go-mode"]
+	path = packages/go-mode
+	url = git@github.com:dominikh/go-mode.el.git

@@ -355,6 +355,15 @@
   :line-numbers t
   :init-package t)
 
+(use-custom-package
+  :package-name 'go
+  :add-path '("~/.emacs.d/packages/go-mode")
+  :mode '((go-mode "\\.go$"))
+  :defer t
+  :autoload '(go-mode)
+  :line-numbers t
+  :init-package t)
+
 ;; (use-custom-package
 ;;   :package-name 'haskell
 ;;   :add-path "~/.emacs.d/packages/haskell-mode"
