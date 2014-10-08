@@ -307,6 +307,7 @@
   :package-name 'yaml
   :mode '((yaml-mode "\\.yaml$" "\\.yml$"))
   :minor-modes '(projectile-on)
+  :autoload '(yaml-mode)
   :defer t
   :line-numbers t
   :init-package t)
