@@ -31,7 +31,9 @@
               "~/.emacs.d/packages/s"
               "~/.emacs.d/packages/dash"
               "~/.emacs.d/packages/grizzl"
-              "~/.emacs.d/packages/fringe-helper")
+              "~/.emacs.d/packages/fringe-helper"
+              "~/.emacs.d/packages/emacs-async"
+              "~/.emacs.d/packages/helm")
   :init-package t)
 
 (use-custom-package
@@ -252,7 +254,7 @@
   :mode '((cperl-mode "\\.pl$" "\\.pm$" "\\.PL$" "\\.t$" "\\.cgi$")
           (xs-mode "\\.xs$")
           (tt-mode "\\.tt$"))
-  :minor-modes '(projectile-on)
+  :minor-modes '(projectile-on helm-mode)
   :defer t
   :line-numbers t
   :init-package t
