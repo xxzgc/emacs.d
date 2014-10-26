@@ -7,7 +7,7 @@
 (setq exec-path (append exec-path '("~/.emacs.d/packages/w3m/bin")))
 
 ;; load
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/"))
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/init/"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/packages/"))
 
 (add-to-list 'load-suffixes ".el.gpg")
