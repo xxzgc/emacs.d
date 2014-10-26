@@ -198,7 +198,7 @@
   :package-name 'project
   :add-path '("~/.emacs.d/packages/projectile")
   :defer t
-  :autoload '(projectile-on projectile-mode)
+  :autoload '(projectile-mode)
   :init-package t)
 
 (use-custom-package
@@ -254,7 +254,6 @@
   :mode '((cperl-mode "\\.pl$" "\\.pm$" "\\.PL$" "\\.t$" "\\.cgi$")
           (xs-mode "\\.xs$")
           (tt-mode "\\.tt$"))
-  :minor-modes '(projectile-on helm-mode)
   :defer t
   :line-numbers t
   :init-package t
@@ -306,7 +305,6 @@
 (use-custom-package
   :package-name 'yaml
   :mode '((yaml-mode "\\.yaml$" "\\.yml$"))
-  :minor-modes '(projectile-on)
   :autoload '(yaml-mode)
   :defer t
   :line-numbers t
@@ -323,7 +321,7 @@
 (use-custom-package
   :package-name 'elisp
   :mode '((emacs-lisp-mode "\\.el$"))
-  :minor-modes '(rainbow-delimiters-mode paredit-mode projectile-on)
+  :minor-modes '(rainbow-delimiters-mode paredit-mode)
   :defer t
   :line-numbers t
   :init-package t)
@@ -379,7 +377,6 @@
   :package-name 'shell-script
   :mode '((shell-script-mode "\\.sh$" "\\.bash$" "\\.zsh$" "^.zshrc$"
                              "^.bashrc$"))
-  :minor-modes '(projectile-on)
   :defer t
   :line-numbers t
   :init-package t)
