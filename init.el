@@ -349,7 +349,7 @@
               "~/.emacs.d/packages/cider"
               "~/.emacs.d/packages/clojure-mode")
   :mode '((clojure-mode "\\.clj$"))
-  :minor-modes '(rainbow-delimiters-mode paredit-mode)
+  :minor-modes '(rainbow-delimiters-mode paredit-mode egg-minor-mode)
   :defer t
   :autoload '(clojure-mode) ;; need to specify autoload as clojure-mode isn't
                             ;; loaded at this point
