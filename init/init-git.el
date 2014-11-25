@@ -32,11 +32,11 @@
 
 ;; Stage hunk at point.
 ;; If region is active, stage all hunk lines within the region.
-(global-set-key (kbd "C-c t") 'git-gutter+-stage-hunks)
-(global-set-key (kbd "C-c c") 'git-gutter+-commit) ; Commit with Magit
-(global-set-key (kbd "C-c C") 'git-gutter+-stage-and-commit)
+;; (global-set-key (kbd "C-c t") 'git-gutter+-stage-hunks)
+;; (global-set-key (kbd "C-c c") 'git-gutter+-commit) ; Commit with Magit
+;; (global-set-key (kbd "C-c C") 'git-gutter+-stage-and-commit)
 
-(global-set-key (kbd "C-c g") 'git-gutter+-mode) ; Turn on/off in the current buffer
-(global-set-key (kbd "C-c G") 'global-git-gutter+-mode) ; Turn on/off globally
+;; (global-set-key (kbd "C-c g") 'git-gutter+-mode) ; Turn on/off in the current buffer
+;; (global-set-key (kbd "C-c G") 'global-git-gutter+-mode) ; Turn on/off globally
 
 (provide 'init-git)
