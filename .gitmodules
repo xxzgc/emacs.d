@@ -203,3 +203,6 @@
 [submodule "packages/helm"]
 	path = packages/helm
 	url = git@github.com:emacs-helm/helm.git
+[submodule "packages/tap-mode"]
+	path = packages/tap-mode
+	url = git@github.com:renormalist/emacs-tap-mode.git
