@@ -18,6 +18,10 @@ or just
 
     $ emacs -q -l ~/.emacs.d/init.el
 
+## Recursive module update ##
+    $ git pull --recurse-submodules
+    $ git submodule update --init --remote --recursive
+
 ## Structure ##
 
 Directory/File | Description |
