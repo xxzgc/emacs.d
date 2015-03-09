@@ -105,8 +105,11 @@
 ;; (set-face-attribute 'default nil :height 100 :font "Envy Code R" :embolden t)
 ;; (set-face-attribute 'default nil :font "Envy Code R VS-10")
 ;; (if (string= (system-name) "darkspace")
-(set-face-attribute 'default nil :height 110 :font "Ubuntu Mono")
-;; (set-face-attribute 'default nil :height 100 :font "Droid Sans Mono"))
+;;     (set-face-attribute 'default nil :height 100 :font "Droid Sans Mono"))
+
+;; Try to set "Ubuntu Mono" font only on linux
+(if (eq system-type 'gnu/linux)
+    (set-face-attribute 'default nil :height 110 :font "Ubuntu Mono"))
 
 ;; ;; show time
 ;; (setq display-time-interval 1)
