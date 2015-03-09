@@ -4,12 +4,24 @@
 
 ;; exec path
 (setenv "PATH" (concat (getenv "PATH") ":/sw/bin"))
-(setq exec-path (append exec-path '("~/.emacs.d/packages/w3m/bin")))
 
-;; load
+;; Add a path to w3m
+(add-to-list 'exec-path (expand-file-name "~/.emacs.d/packages/w3m/bin"))
+
+;; Add MacOS X specific paths
+(when (eq system-type 'darwin)
+  ;; GPG may be in a different path, so try to add it
+  (let ((gpg-path "/usr/local/MacGPG2/bin"))
+    (if (file-exists-p gpg-path)
+        (add-to-list 'exec-path gpg-path)))
+  ;; Most of the brew-installed tools are here
+  (add-to-list 'exec-path "/usr/local/bin"))
+
+;; Load el-files from these paths
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/init/"))
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/packages/"))
 
+;; Some .el scripts may be gpg-encrypted
 (add-to-list 'load-suffixes ".el.gpg")
 
 ;; (mapc (lambda (mode-hook) (add-hook mode-hook 'turn-on-watchwords))
