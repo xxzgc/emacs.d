@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: @_
+# key: @_
+# --
+my ($`(if (string-match "/Chimera/API/" buffer-file-name) "class" "self")`) = @_;
