@@ -35,7 +35,6 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 
 ;; buffer switch
-(iswitchb-mode t)
 (ido-mode t)
 
 (setq tramp-default-method "ssh")
