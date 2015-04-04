@@ -40,6 +40,7 @@
               "~/.emacs.d/packages/emacs-deferred"
               "~/.emacs.d/packages/emacs-epc"
               "~/.emacs.d/packages/emacs-ctable"
+              "~/.emacs.d/packages/f"
               "~/.emacs.d/packages/s"
               "~/.emacs.d/packages/dash"
               "~/.emacs.d/packages/grizzl"
@@ -359,9 +360,10 @@
   :package-name 'clojure
   :add-path '("~/.emacs.d/packages/ac-nrepl"
               "~/.emacs.d/packages/cider"
-              "~/.emacs.d/packages/clojure-mode")
+              "~/.emacs.d/packages/clojure-mode"
+              "~/.emacs.d/packages/clj-refactor")
   :mode '((clojure-mode "\\.clj$"))
-  :minor-modes '(rainbow-delimiters-mode paredit-mode egg-minor-mode)
+  :minor-modes '(rainbow-delimiters-mode paredit-mode egg-minor-mode clj-refactor-mode)
   :defer t
   :autoload '(clojure-mode) ;; need to specify autoload as clojure-mode isn't
                             ;; loaded at this point

@@ -206,3 +206,9 @@
 [submodule "packages/tap-mode"]
 	path = packages/tap-mode
 	url = git@github.com:renormalist/emacs-tap-mode.git
+[submodule "packages/f"]
+	path = packages/f
+	url = git@github.com:rejeep/f.el.git
+[submodule "packages/clj-refactor"]
+	path = packages/clj-refactor
+	url = git@github.com:clojure-emacs/clj-refactor.el.git
