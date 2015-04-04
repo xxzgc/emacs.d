@@ -379,6 +379,15 @@
   :line-numbers t
   :init-package t)
 
+(use-custom-package
+  :package-name 'rust
+  :add-path '("~/.emacs.d/packages/rust-mode")
+  :mode '((rust-mode "\\.rs$"))
+  :defer t
+  :autoload '(rust-mode)
+  :line-numbers t
+  :init-package t)
+
 ;; (use-custom-package
 ;;   :package-name 'haskell
 ;;   :add-path "~/.emacs.d/packages/haskell-mode"

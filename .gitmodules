@@ -212,3 +212,6 @@
 [submodule "packages/clj-refactor"]
 	path = packages/clj-refactor
 	url = git@github.com:clojure-emacs/clj-refactor.el.git
+[submodule "packages/rust-mode"]
+	path = packages/rust-mode
+	url = git@github.com:rust-lang/rust-mode.git
