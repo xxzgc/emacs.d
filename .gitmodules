@@ -215,3 +215,9 @@
 [submodule "packages/rust-mode"]
 	path = packages/rust-mode
 	url = git@github.com:rust-lang/rust-mode.git
+[submodule "packages/persp-mode"]
+	path = packages/persp-mode
+	url = git@github.com:Bad-ptr/persp-mode.el.git
+[submodule "packages/workgroups"]
+	path = packages/workgroups
+	url = git@github.com:tlh/workgroups.el.git
