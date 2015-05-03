@@ -399,4 +399,10 @@ The possible chars are 0 to 9, and a to z (lower case)."
   (interactive "*P\nr")
   (sort-regexp-fields reverse "\\(\\sw\\|\\s_\\)+" "\\&" beg end))
 
+(defun json-format ()
+  "Beautifying JSON on a region"
+  (interactive)
+  (save-excursion
+    (shell-command-on-region (mark) (point) "python -m json.tool" (buffer-name) t)))
+
 (provide 'init-general-defuns)
