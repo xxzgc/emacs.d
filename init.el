@@ -409,6 +409,7 @@
   :add-path "~/.emacs.d/packages/markdown-mode"
   :mode '((markdown-mode "\\.md$" "\\.mdwn$" "\\.mdt$"))
   :defer t
+  :autoload '(markdown-mode)
   :line-numbers t
   :init-package t)
 
